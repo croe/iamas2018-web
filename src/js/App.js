@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {render} from "react-dom";
 import {browserHistory, Router, Route, IndexRoute} from 'react-router';
+import Navigation from './components/navigation';
 
 import Index from './index';
 
@@ -22,7 +23,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="layout">
+        <Navigation />
         {this.props.children && React.cloneElement(this.props.children, {
           _it: this
         })}

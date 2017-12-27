@@ -1,0 +1,95 @@
+.layout {
+  @include e(navigation) {
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background: $color-key;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    &:before {
+      content: '';
+      width: 150px;
+      position: absolute;
+      top: 0;
+      left: 100px;
+      height: 100%;
+      z-index: 10;
+      transition: all 1200ms;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: linear-gradient(to right, rgba(0,65,97,1) 0%,rgba(0,65,97,1) 80%,rgba(128,160,176,1) 90%,rgba(255,255,255,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004161', endColorstr='#00ffffff',GradientType=1 );
+    }
+    &:hover {
+      &:before {
+        transform: scaleX(1);
+      }
+      .layout__navigation--wrapper {
+        ul.menu {
+          li {
+            a {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+    @include m(wrapper) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      z-index: 15;
+      ul.menu {
+        position: relative;
+        z-index: auto;
+        li {
+          a {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 0;
+            padding: 0 0 0 80px;
+            height: 70px;
+            color: $color-base-white;
+            text-decoration: none;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              background: $color-base-white;
+              border-radius: 50%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
+          }
+        }
+      }
+      ul.sns {
+        margin: 50px 0 0;
+        li {
+          height: 70px;
+          a {
+            position: relative;
+            display: block;
+            color: $color-base-white;
+            img {
+              position: absolute;
+              display: block;
+              width: 20px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

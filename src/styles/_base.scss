@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Ubuntu', "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'Ubuntu', "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +24,10 @@ body {
   line-height: 1em;
   overflow-x: hidden;
   min-height: 100%;
+  height: 100%;
+}
+
+#root {
   height: 100%;
 }
 
