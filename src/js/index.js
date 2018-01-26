@@ -3,6 +3,12 @@ import {Link} from 'react-router';
 import {findDOMNode} from "react-dom";
 import $ from 'jquery';
 
+import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
+import pluging from 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import {TweenMax, Power2, TimelineLite} from 'gsap';
+
+import YouTube from 'react-youtube';
+
 class Index extends Component {
   constructor(props) {
     super(props)
@@ -15,7 +21,22 @@ class Index extends Component {
     $('.mainvisual').css({'height': $window.innerHeight()});
     $window.on('resize',()=>{
       $('.mainvisual').css({'height': $window.innerHeight()});
-    })
+    });
+    $('.bg_live').css({'height': $window.innerHeight()});
+    $window.on('resize',()=>{
+        $('.bg_live').css({'height': $window.innerHeight()});
+    });
+    /**
+     * Anchor link Animation
+     */
+    $("a[href^='#']").on('click', function () {
+        let speed = 500,
+            href = $(this).attr("href"),
+            target = $(href == "#" || href == "" ? 'html' : href),
+            position = target.offset().top;
+        $("html, body").animate({scrollTop: position}, speed, "swing");
+        return false;
+    });
 
   }
 
@@ -26,7 +47,7 @@ class Index extends Component {
           <article className="mainvisual">
             <img src="/images/title.svg" alt=""/>
           </article>
-          <article>
+          <article id="info">
             <h2 data-subtitle="開催概要">Information</h2>
             <div className="layout__container--content">
               <p><strong>情報科学芸術大学院大学 第16期生修了研究発表会・プロジェクト研究発表会</strong></p>
@@ -38,7 +59,7 @@ class Index extends Component {
               <p>主催：情報科学芸術大学院大学[IAMAS]</p>
             </div>
           </article>
-          <article>
+          <article id="theme">
             <h2 data-subtitle="テーマ">Theme</h2>
             <div className="layout__container--content">
               <p><strong>つまずく小石を拾うこと</strong></p><br/>
@@ -61,7 +82,7 @@ class Index extends Component {
               <p>IAMAS2017のテーマ「ひらく」をキーワードに ゲストを招いたトークイベントやライブ、学生有志によるパフォーマンスなどを企画しました。</p><br/>
               <p>私たちの日常はあらゆる可能性を秘めています。<br/>
                 それらの可能性を「ひらく」ことについて、各々のイベントを通して考えていきます。</p>
-              <a href="#">More</a>
+              <Link to="/event">More</Link>
             </div>
           </article>
           <article>
@@ -80,8 +101,9 @@ class Index extends Component {
                 <li>浜田　卓之</li>
                 <li>原田　和馬</li>
                 <li>山口　伊生人</li>
+                <li>綿貫　岳海</li>
               </ul>
-              <a href="#">More</a>
+              <Link to="/works">More</Link>
             </div>
           </article>
           <article>
@@ -90,16 +112,16 @@ class Index extends Component {
               <p>
                 プロジェクトは、メディア表現領域の社会的な意義をはかりながら、高度な研究成果や技術開発を目指して、領域横断的に運営される授業群です。今年はIAMASの研究活動の主幹として、多領域に渡るプロジェクト研究が活動しました。「IAMAS 2017」では修士研究発表に加えて、これらプロジェクト研究の成果を展示します。
               </p>
-              <a href="#">More</a>
+              <Link to="/projects">More</Link>
             </div>
           </article>
-          <article>
+          <article id="access">
             <h2 data-subtitle="アクセス">Access</h2>
             <div className="layout__container--content">
               <img src="/images/map.svg" alt=""/>
             </div>
           </article>
-          <article className="contact">
+          <article id="contact" className="contact">
             <h2 data-subtitle="お問い合わせ">Contact</h2>
             <div className="layout__container--content">
               <p>IAMAS 2017へのお問い合わせはこちらまでお寄せください。</p>

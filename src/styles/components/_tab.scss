@@ -1,0 +1,26 @@
+.tab {
+  @include e(head){
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 -5px;
+      li {
+        width: 25%;
+        padding: 10px;
+        margin: 0 5px;
+        text-align: center;
+        cursor: pointer;
+        background: $color-base-gray;
+      }
+    }
+  }
+  @include e(content){
+    ul {
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .layout {
   @include e(navigation) {
     position: fixed;
-    width: 100px;
+    width: 50px;
     height: 100%;
     background: $color-key;
     top: 0;
@@ -12,7 +12,7 @@
       width: 150px;
       position: absolute;
       top: 0;
-      left: 100px;
+      left: 50px;
       height: 100%;
       z-index: 10;
       transition: all 1200ms;
@@ -53,7 +53,7 @@
             justify-content: flex-start;
             align-items: center;
             font-size: 0;
-            padding: 0 0 0 80px;
+            padding: 0 0 0 50px;
             height: 70px;
             color: $color-base-white;
             text-decoration: none;

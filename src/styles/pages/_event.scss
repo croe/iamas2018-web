@@ -1,0 +1,23 @@
+.page__event {
+  .layout__container--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200%;
+    height: 100%;
+    transform: translate3d(0,0,0);
+    transition: all 500ms;
+    &.is-active {
+      transform: translate3d(-50%,0,0);
+    }
+    h2 {
+      &:before {
+        width: calc(210% + 50px);
+      }
+    }
+    article {
+      width: 100%;
+    }
+  }
+}

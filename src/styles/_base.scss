@@ -5,7 +5,7 @@
 // Styleguide base
 
 //Base
-@import url(//fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(//fonts.googleapis.com/css?family=Muli:300,400);
 @import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 html {
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Ubuntu', "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'Muli',"ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",  "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,4 +45,8 @@ h1,h2,h3,h4,h5,h6 {
 
 * {
   box-sizing: border-box;
+}
+
+.ytp-watermark {
+  display: none!important;
 }
