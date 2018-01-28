@@ -8,6 +8,7 @@ import pluging from 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap
 import {TweenMax, Power2, TimelineLite} from 'gsap';
 
 import workData from './data/workData.json';
+import magnificPopup from 'magnific-popup';
 
 class Works extends Component {
     constructor(props) {
@@ -24,8 +25,8 @@ class Works extends Component {
             $('.bg_live').css({'height': $window.innerHeight()});
             $('.layout__container').css({'height': $window.innerHeight()});
         })
-
-
+        console.log($.fn)
+        $('.mfp-popup').magnificPopup({type:'image'});
     }
 
     render() {
@@ -35,7 +36,7 @@ class Works extends Component {
             let imgsrc = "/images/" + item.image_1x1;
             if (index === 0 || index === 1 || index === 2 || index === 3) {
                 return (
-                    <li key={index} data-author={item.name_en}>
+                    <li className="mfp-popup" key={index} data-author={item.name_en}>
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -45,7 +46,7 @@ class Works extends Component {
             let imgsrc = "/images/" + item.image_1x1;
             if (index === 4 || index === 5 || index === 6 || index === 7 || index === 8) {
                 return (
-                    <li key={index} data-author={item.name_en}>
+                    <li className="mfp-popup" key={index} data-author={item.name_en}>
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -55,7 +56,7 @@ class Works extends Component {
             let imgsrc = "/images/" + item.image_1x1;
             if (index === 9 || index === 10 || index === 11 || index === 12) {
                 return (
-                    <li key={index} data-author={item.name_en}>
+                    <li className="mfp-popup" key={index} data-author={item.name_en}>
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )

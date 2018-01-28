@@ -6,14 +6,15 @@
 
 @import "./configs/slick";
 @import "./configs/slick-theme";
+@import "./configs/magnific-popup";
 
 @import "base";
 @import "layout";
 
-@import "pages/index";
-@import "pages/event";
-@import "pages/projects";
-@import "pages/works";
+@import "./pages/index";
+@import "./pages/event";
+@import "./pages/projects";
+@import "./pages/works";
 
 @import "./components/header";
 @import "./components/footer";
