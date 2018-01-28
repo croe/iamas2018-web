@@ -78,14 +78,40 @@
 
     }
     @include m(content) {
-
       width: 100%;
       padding: 0 0 0 350px;
       box-sizing: border-box;
       font-size: 18px;
       line-height: 34px;
       color: $color-accent-text;
-
+      @include e(more){
+        position: absolute;
+        padding: 4px 8px;
+        right: 72px;
+        a {
+          display: block;
+          font-weight: 600;
+          text-decoration: none;
+          color: #fff;
+          background-color: $color-accent-icon;
+          width: 64px;
+          text-align: center;
+          margin: 16px 0;
+          &:after {
+            position: absolute;
+            content: "";
+            left: 72px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 17px 0px 17px 14px;
+            border-color: transparent transparent transparent $color-accent-icon;
+            @include max-screen ($breakpoint-sm){
+              border-width: 14px 0px 14px 10px;
+            }
+          }
+        }
+      }
     }
   }
 }
