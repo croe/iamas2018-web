@@ -55,6 +55,7 @@ class Event extends Component {
     showTabContentHandleClick(e, item, index) {
 
         $('.layout__container--wrapper').addClass('is-active');
+        $("html, body").animate({scrollTop: 0}, 500, "swing");
         this.setState({
             item: item,
             itemIndex: index
