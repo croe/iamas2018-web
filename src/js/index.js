@@ -82,7 +82,9 @@ class Index extends Component {
               <p>IAMAS2017のテーマ「ひらく」をキーワードに ゲストを招いたトークイベントやライブ、学生有志によるパフォーマンスなどを企画しました。</p><br/>
               <p>私たちの日常はあらゆる可能性を秘めています。<br/>
                 それらの可能性を「ひらく」ことについて、各々のイベントを通して考えていきます。</p>
-              <Link to="/event">More</Link>
+                <div className="layout__container--content__more">
+                  <Link to="/event">More</Link>
+                </div>
             </div>
           </article>
           <article>
@@ -103,7 +105,9 @@ class Index extends Component {
                 <li>山口　伊生人</li>
                 <li>綿貫　岳海</li>
               </ul>
-              <Link to="/works">More</Link>
+              <div className="layout__container--content__more">
+                <Link to="/works">More</Link>
+              </div>
             </div>
           </article>
           <article>
@@ -112,7 +116,9 @@ class Index extends Component {
               <p>
                 プロジェクトは、メディア表現領域の社会的な意義をはかりながら、高度な研究成果や技術開発を目指して、領域横断的に運営される授業群です。今年はIAMASの研究活動の主幹として、多領域に渡るプロジェクト研究が活動しました。「IAMAS 2017」では修士研究発表に加えて、これらプロジェクト研究の成果を展示します。
               </p>
-              <Link to="/projects">More</Link>
+              <div className="layout__container--content__more">
+                <Link to="/projects">More</Link>
+              </div>
             </div>
           </article>
           <article id="access">

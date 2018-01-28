@@ -152,3 +152,77 @@
     }
   }
 }
+
+
+@include max-screen($breakpoint-sm){
+  .page__event {
+
+    .layout__container--wrapper {
+      article {
+        .tab {
+          padding: 40px 0 0 14px;
+        }
+        &.layout__container--content {
+          h2 {
+            left: 30px;
+          }
+          .event_detail {
+            padding: 20px 0 0;
+            .event_head {
+              p {
+                .label {
+                  font-size: calc(18px * 0.8);
+                }
+                .date {
+                  font-size: calc(18px * 0.8);
+                  margin: 0 0 0 16px;
+                }
+                .place {
+                  font-size: calc(18px * 0.8);
+                  margin: 0;
+                }
+              }
+              h4 {
+                font-size: calc(30px * 0.8);
+              }
+            }
+            .event_content {
+              &.no-guest {
+                display: block;
+                .event_img {
+                  width: 100%;
+                }
+                .content {
+                  width: 100%;
+                  padding: 0;
+                }
+              }
+            }
+            .event_guest {
+              display: block;
+              .prof_img {
+                width: 100%;
+              }
+              .profile {
+                width: 100%;
+                padding: 20px 0;
+              }
+            }
+            .btn_prev, .btn_next {
+              &:before {
+                font-size: 24px;
+              }
+            }
+            .btn_prev {
+              left: -30px;
+            }
+            .btn_next {
+              right: -30px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

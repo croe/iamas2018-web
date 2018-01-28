@@ -94,3 +94,42 @@
     }
   }
 }
+
+@include max-screen($breakpoint-sm){
+  .tab {
+    @include e(head){
+      ul {
+        li {
+          font-size: 16px;
+          min-width: 63px;
+        }
+      }
+    }
+    @include e(content){
+      ul {
+        li {
+          h3 {
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba($color-accent-text, 0.2);
+            &.level0 {
+              font-size: 16px;
+              line-height: 1;
+            }
+            &.level1 {
+              font-size: 20px;
+              line-height: 1.4;
+            }
+          }
+          p {
+            .place {
+              margin: 4px 0;
+            }
+            .guest {
+              margin: 4px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
