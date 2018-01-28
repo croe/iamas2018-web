@@ -4,11 +4,15 @@
 @import "./configs/variables";
 @import "./configs/font";
 
+@import "./configs/slick";
+@import "./configs/slick-theme";
+
 @import "base";
 @import "layout";
 
 @import "pages/index";
 @import "pages/event";
+@import "pages/projects";
 
 @import "./components/header";
 @import "./components/footer";

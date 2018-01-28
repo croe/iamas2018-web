@@ -1,45 +1,6 @@
 {
   "projects": [
     {
-      "name_ja": "アートを/で考えるプロジェクト (ATP)",
-      "name_en": "Art Thinking Project (ATP)",
-      "prof": "「アートを／で考えるプロジェクト」という言葉には、二つの意味が含まれている。それは、アートの表現自体を考えるという意味と、アートの作品・制作を通して、社会的・文化的諸問題を考えるという意味である。このプロジェクトは、作品の発表や展示企画、パフォーマンス、批評など、学生の多様なアートの実践と研究を支えることを目的とする。個々の活動をプレゼンテーションやディスカッション、文献講読、展覧会の鑑賞と批評などを通して考察する。",
-      "title_ja": "ATP Activities 2018",
-      "title_en": "ATP Activities 2018",
-      "exh_ov": "ATPプロジェクト・メンバーである、塚原 真梨佳、大和 比呂志、箕浦 慧、小寺 諒、棚原みずきが、それぞれの制作活動・研究内容をパネルや映像で展示している。また別の場所で展示されている個々の作品についての案内も行っている。",
-      "lec_ja": ["小林 昌廣","安藤 泰彦"],
-      "lec_en": ["KOBAYASHI Masahiro","ANDO Yasuhiko"],
-      "works": [
-        {
-          "wname_ja": "Time Devices",
-          "wname_en": "Time Devices",
-          "wprof": "現代社会に溢れるモノ（既製品）には決められた使い方がある。それを疑うことから生まれた空間。作品空間で過ごすことうちに、人と時計の「見る・見られる」の関係が変化する。それは現代社会で共有された基準としての「時間」を疑うことになるかもしれない。",
-          "author_ja": ["小寺　諒"],
-          "author_en": ["KOTERA Ryo"],
-          "author_prof": ["学部時代にメディアアートの制作を始め、現在に至る。"],
-          "author_web": []
-        },
-        {
-          "wname_ja": "KUGUTSU",
-          "wname_en": "KUGUTSU",
-          "wprof": "途切れることなく、尽きることなく、ただ営々と営まれる人と機械の戯れをロボットアームとシームレスに踊り続ける身体で表現する。かつては従者であったテクノロジーに依存を強め、私たちはそれ無しでは存在できないほど破綻した主従関係を経験している。ロボットを制御する私と、私の一部に組み込まれたロボットの、永遠のカノンをおどる。",
-          "author_ja": ["箕浦　慧"],
-          "author_en": ["MINOURA Kei"],
-          "author_prof": ["進化するデジタルテクノロジーの奔流の中で、情報絶対量の氾濫に霞ゆく身体を捉え、おどる。ロシア国立ペルミバレエ学校卒業後、モスクワシティーバレエ団所属。その後フリーランスを経て、現在IAMASに於いて小林昌廣教授に師事。"],
-          "author_web": ["https://www.facebook.com/kei.minoura.jp"]
-        },
-        {
-          "wname_ja": "I'm here now",
-          "wname_en": "I'm here now",
-          "wprof": "情報伝達にラグがほぼない現代における、自己身体の存在意義について考えた作品。（2017年9-12月の3ヶ月間、オーストリアのリンツ工芸大学に交換留学した際に、IAMAS学内自分のブースにて展示した作品記録の展示）",
-          "author_ja": ["棚原　みずき"],
-          "author_en": ["TANAHARA Mizuki"],
-          "author_prof": ["立命館大学映像学部卒。広告代理店で企画営業の後、IAMAS入学。テクノロジーと共に生きる現代社会に対する問題提起とこれからのコミュニケーションをテーマに研究、作品制作を行う。"],
-          "author_web": ["https://www.facebook.com/kei.minoura.jp"]
-        }
-      ]
-    },
-    {
       "name_ja": "あしたをプロトタイピングするプロジェクト",
       "name_en": "Prototyping Tomorrow Project",
       "prof": "社会課題を抽出し、その課題に対する応答としてアイデアからプロトタイプを実現していくことにより未来像を創出し、あしたについて考えていく研究プロジェクト。これまでにIAMASで編み出したプロトタイピングメソッドやアイデアスケッチなどを試行しながら、その思考ツールやデザインプロセスも同時に研究対象として研究する。",
@@ -48,6 +9,7 @@
       "exh_ov": "地域性を考慮した衣食住の問題・課題を考察し、それらをネットワーキングによって解決していく。新規デザインフィールドの発掘と実践を目指し、プロトタイプ等で実験・評価を行い、仮説を実証する。",
       "lec_ja": ["鈴木宣也","赤羽亨"],
       "lec_en": ["SUZUKI Nobuya","AKABANE Kyo"],
+      "proj_img": "proj_asita.jpg",
       "works": [
         {
           "wname_ja": "洗濯を軸にしたマルチサイドプラットフォーム",
@@ -56,7 +18,51 @@
           "author_ja": ["荏原 洋夢"],
           "author_en": ["EHARA Hiromu"],
           "author_prof": ["1995年、新潟県出身。工業高専で電子制御工学、大学でプロダクトデザインを学ぶ。デザインのデザインを探求中。"],
-          "author_web": ["https://hehara17.myportfolio.com"]
+          "author_web": ["https://hehara17.myportfolio.com"],
+          "thumbnail": "pw_asita_1.png"
+        }
+      ]
+    },
+    {
+      "name_ja": "アートを/で考えるプロジェクト (ATP)",
+      "name_en": "Art Thinking Project (ATP)",
+      "prof": "「アートを／で考えるプロジェクト」という言葉には、二つの意味が含まれている。それは、アートの表現自体を考えるという意味と、アートの作品・制作を通して、社会的・文化的諸問題を考えるという意味である。このプロジェクトは、作品の発表や展示企画、パフォーマンス、批評など、学生の多様なアートの実践と研究を支えることを目的とする。個々の活動をプレゼンテーションやディスカッション、文献講読、展覧会の鑑賞と批評などを通して考察する。",
+      "title_ja": "ATP Activities 2018",
+      "title_en": "ATP Activities 2018",
+      "exh_ov": "ATPプロジェクト・メンバーである、塚原 真梨佳、大和 比呂志、箕浦 慧、小寺 諒、棚原みずきが、それぞれの制作活動・研究内容をパネルや映像で展示している。また別の場所で展示されている個々の作品についての案内も行っている。",
+      "lec_ja": ["小林 昌廣","安藤 泰彦"],
+      "lec_en": ["KOBAYASHI Masahiro","ANDO Yasuhiko"],
+      "proj_img": "proj_atp.jpg",
+      "works": [
+        {
+          "wname_ja": "Time Devices",
+          "wname_en": "Time Devices",
+          "wprof": "現代社会に溢れるモノ（既製品）には決められた使い方がある。それを疑うことから生まれた空間。作品空間で過ごすことうちに、人と時計の「見る・見られる」の関係が変化する。それは現代社会で共有された基準としての「時間」を疑うことになるかもしれない。",
+          "author_ja": ["小寺　諒"],
+          "author_en": ["KOTERA Ryo"],
+          "author_prof": ["学部時代にメディアアートの制作を始め、現在に至る。"],
+          "author_web": [],
+          "thumbnail": "pw_atp_1.jpg"
+        },
+        {
+          "wname_ja": "KUGUTSU",
+          "wname_en": "KUGUTSU",
+          "wprof": "途切れることなく、尽きることなく、ただ営々と営まれる人と機械の戯れをロボットアームとシームレスに踊り続ける身体で表現する。かつては従者であったテクノロジーに依存を強め、私たちはそれ無しでは存在できないほど破綻した主従関係を経験している。ロボットを制御する私と、私の一部に組み込まれたロボットの、永遠のカノンをおどる。",
+          "author_ja": ["箕浦　慧"],
+          "author_en": ["MINOURA Kei"],
+          "author_prof": ["進化するデジタルテクノロジーの奔流の中で、情報絶対量の氾濫に霞ゆく身体を捉え、おどる。ロシア国立ペルミバレエ学校卒業後、モスクワシティーバレエ団所属。その後フリーランスを経て、現在IAMASに於いて小林昌廣教授に師事。"],
+          "author_web": ["https://www.facebook.com/kei.minoura.jp"],
+          "thumbnail": "pw_atp_2.jpg"
+        },
+        {
+          "wname_ja": "I'm here now",
+          "wname_en": "I'm here now",
+          "wprof": "情報伝達にラグがほぼない現代における、自己身体の存在意義について考えた作品。（2017年9-12月の3ヶ月間、オーストリアのリンツ工芸大学に交換留学した際に、IAMAS学内自分のブースにて展示した作品記録の展示）",
+          "author_ja": ["棚原　みずき"],
+          "author_en": ["TANAHARA Mizuki"],
+          "author_prof": ["立命館大学映像学部卒。広告代理店で企画営業の後、IAMAS入学。テクノロジーと共に生きる現代社会に対する問題提起とこれからのコミュニケーションをテーマに研究、作品制作を行う。"],
+          "author_web": ["https://www.facebook.com/kei.minoura.jp"],
+          "thumbnail": "pw_atp_3.jpg"
         }
       ]
     },
@@ -69,6 +75,7 @@
       "exh_ov": "2017年夏にオープンハウスで展示したアートを埋め込んだ机「463.5 : 750.0」の、学外施設への導入の提案に関するパネル展示と、ヘッドマウント・ディスプレイを利用し家具のサイズや配置を精査していく検討方法を試みる実験的な空間展示を行う。",
       "lec_ja": ["小林茂","ジェームズ ギブソン"],
       "lec_en": ["KOBAYASHI Sigeru","James Gibson"],
+      "proj_img": "proj_craft.jpg",
       "works": [
         {
           "wname_ja": "芸術要素を含んだ実用机の公共空間への導入について",
@@ -77,7 +84,8 @@
           "author_ja": ["箕浦　慧","アン セビン"],
           "author_en": ["MINOURA Kei","AN Sebin"],
           "author_prof": ["ダンサー/振付家。欧米各国400以上の劇場で働いた経験より、大型の造形物と身体の関係に興味を持つ。デジタル工作機による立体物の制作と、同じ空間に存在する身体の反応についての研究を行っている。","1995年生まれ。韓国出身。ソウル芸術大学卒業。自然物の動きを表現することをテーマにして制作を行っている。"],
-          "author_web": ["https://www.facebook.com/kei.minoura.jp",""]
+          "author_web": ["https://www.facebook.com/kei.minoura.jp",""],
+          "thumbnail": "pw_craft_1.jpg"
         },
         {
           "wname_ja": "Room 1",
@@ -86,7 +94,8 @@
           "author_ja": ["冨田太基と愉快な仲間たち（2017）"],
           "author_en": ["TOMITA Hiroki and Happy friends（2017）"],
           "author_prof": ["プロジェクト研究補助員。現在は、デジタル工作機器を利用してつくるシンプルなジョイントパーツとホームセンターで手に入れられる角材を組み合わせた什器の制作方法について探求中。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_craft_2.png"
         }
       ]
     },
@@ -99,6 +108,7 @@
       "exh_ov": "今年度のプロジェクトの活動内容についての展示等をする。一つ目は特別支援学校で行うレクリエーションの提案をしてきたのでその取り組み紹介する。二つ目は、岐阜県美術館で実施された「アートまるケット」にプロジェクトとして参加したので、特別支援学校など含む4つの組織との活動内容を展示する。",
       "lec_ja": ["山田晃嗣","小林孝浩"],
       "lec_en": ["YAMADA Koji","KOBAYASHI Takahiro"],
+      "proj_img": "proj_hukusi.jpg",
       "works": [
         {
           "wname_ja": "アートまるケットでのプロジェクト展示",
@@ -107,7 +117,8 @@
           "author_ja": ["山田　晃嗣"],
           "author_en": ["YAMADA Koji"],
           "author_prof": ["福祉の技術プロジェクトを立ち上げて今年で4年目になる。障がい者（児）の生活に寄り添う技術を日夜考えている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_hukusi_1.jpg"
         },
         {
           "wname_ja": "鼓道",
@@ -116,7 +127,8 @@
           "author_ja": ["湯澤　大樹"],
           "author_en": ["YUZAWA Taiki"],
           "author_prof": ["特別支援学校や車椅子バスケットボールチームでの活動を共に行う。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_hukusi_2.jpg"
         }
       ]
     },
@@ -129,6 +141,7 @@
       "exh_ov": "今年度各自が製作を行った作品とその作品に至るまでの過程をパネルにて展示する。またプロジェクト全体として取り組んだ、「ライフオブ・ヨーロー！まちの宝モノ」展、「どこまでが自分でどこからが自分じゃないのか実験」、「カレイドトレイン」の内容を展示する。",
       "lec_ja": ["クワクボリョウタ","金山智子"],
       "lec_en": ["KUWAKUBO Ryota","KANAYAMA Tomoko"],
+      "proj_img": "proj_toy.jpg",
       "works": [
         {
           "wname_ja": "機械との協調作業におけるアクロバット性",
@@ -137,7 +150,8 @@
           "author_ja": ["中路　景暁"],
           "author_en": ["NAKAJI Hiroaki"],
           "author_prof": ["千葉大学大学院工学研究科修了。エンジニアとしてメーカー勤務後IAMAS入学。人と機械の協調におけるパフォーマンス性についての研究を行う。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_toy_1.jpg"
         },
         {
           "wname_ja": "フィルターバブルからの脱出方法の模索",
@@ -146,7 +160,8 @@
           "author_ja": ["棚原　みずき"],
           "author_en": ["TANAHARA Mizuki"],
           "author_prof": ["立命館大学映像学部卒。広告代理店で企画営業の後、IAMAS入学。テクノロジーと共に生きる現代社会に対する問題提起とこれからのコミュニケーションをテーマに研究、作品制作を行う。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_toy_2.jpg"
         },
         {
           "wname_ja": "デジタル上の個人的な記録データの立体化",
@@ -155,7 +170,8 @@
           "author_ja": ["平瀬　未来"],
           "author_en": ["HIRASE Miki"],
           "author_prof": ["武蔵野美術大学造形学部彫刻学科卒業。デジタルデバイス上の物事を立体物として留めることで情報とは何かを探る"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_toy_3.jpg"
         }
       ]
     },
@@ -168,6 +184,7 @@
       "exh_ov": "「クリティカル・サイクリング＋移動体芸術」展では、自転車を主な題材としているクリティカル・サイクリングと、「移動」をテーマに研究活動を行う移動体芸術による作品や資料を展示する。「養老アート・ピクニック」において展示した作品をはじめ、日々の生活や調査研究から生まれた新しい作品も展示する。",
       "lec_ja": ["赤松正行","鈴木 宣也","松井 茂","伊村靖子","瀬川 晃"],
       "lec_en": ["AKAMATSU Masayuki","SUZUKI Nobuya","MATSUI Shigeru","IMURA Yasuko","SEGAWA Akira"],
+      "proj_img": "proj_move.jpg",
       "works": [
         {
           "wname_ja": "空の目",
@@ -176,7 +193,8 @@
           "author_ja": ["赤松　正行"],
           "author_en": ["AKAMATSU Masayuki"],
           "author_prof": ["クリティカル・サイクリング主宰、博士（美術）。近年はモビリティとリアリティをテーマに制作と考察を行なっている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_move_1.jpg"
         },
         {
           "wname_ja": "新製陸舟奔車 2017",
@@ -185,7 +203,8 @@
           "author_ja": ["チェ　シヨン"],
           "author_en": ["CHOI Siyoung"],
           "author_prof": ["韓国出身。日本に留学し、CG業界で勤務する中、立体物製作と身体に関わる作品を作りたいと思うようになる。ガス溶接の資格を取るなど、カスタム乗り物製作を進めている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_move_2.jpg"
         },
         {
           "wname_ja": "伊吹山 1:645",
@@ -194,7 +213,8 @@
           "author_ja": ["チェ　シヨン"],
           "author_en": ["CHOI Siyoung"],
           "author_prof": ["韓国出身。日本に留学し、CG業界で勤務する中、立体物製作と身体に関わる作品を作りたいと思うようになる。ガス溶接の資格を取るなど、カスタム乗り物製作を進めている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_move_3.jpg"
         },
         {
           "wname_ja": "LandCrawler 2x2",
@@ -203,7 +223,8 @@
           "author_ja": ["チェ　シヨン"],
           "author_en": ["CHOI Siyoung"],
           "author_prof": ["韓国出身。日本に留学し、CG業界で勤務する中、立体物製作と身体に関わる作品を作りたいと思うようになる。ガス溶接の資格を取るなど、カスタム乗り物製作を進めている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_move_4.jpg"
         },
         {
           "wname_ja": "拡張XYZカーゴ・トライク",
@@ -212,7 +233,8 @@
           "author_ja": ["赤松　正行"],
           "author_en": ["AKAMATSU Masayuki"],
           "author_prof": ["クリティカル・サイクリング主宰、博士（美術）。近年はモビリティとリアリティをテーマに制作と考察を行なっている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_move_5.jpg"
         }
       ]
     },
@@ -225,6 +247,7 @@
       "exh_ov": "現在Web上で発信している、これまで開催されたレクチャー及び活動のアーカイブと、2017年度に開催されたトーク・イヴェントの映像記録を展示する。",
       "lec_ja": ["前林明次"],
       "lec_en": ["MAEBAYASHI Akitsugu"],
+      "proj_img": "proj_korekara.jpg",
       "works": [""]
     },
     {
@@ -236,6 +259,7 @@
       "exh_ov": "大垣市赤坂にある「金生山」を音響と映像によって感覚的に、多層的に再構成する。人類学者の柳沢英輔氏をゲストに迎え、エオリアン・ハープの音響を通して現在の金生山の風景の想像＝創造を試みる。プロジェクトメンバー：柳沢英輔（同志社大学文化情報学部助教）、具志堅裕介、湯澤大樹、前林明次",
       "lec_ja": ["前林明次"],
       "lec_en": ["MAEBAYASHI Akitsugu"],
+      "proj_img": "proj_psm.jpg",
       "works": [""]
     },
     {
@@ -247,6 +271,7 @@
       "exh_ov": "今年度は、フィールドワークで見つけた生活文化、活動で出会ったいきものや風景などをどのように未来へと継承していくのか、記憶と記録のデザインを模索・創造した。展示では、「地域の新しい記憶と記録のデザイン」として、プロダクトから空間デザイン、ワークショップデザインや風景など、さまざまな形での表現をみせる。",
       "lec_ja": ["金山 智子","ジェームズ ギブソン","小林 孝浩","吉田 茂樹"],
       "lec_en": ["KANAYAMA Tomoko","James Gibson","KOBAYASHI Takahiro","YOSHIDA Shigeki"],
+      "proj_img": "proj_neo.jpg",
       "works": [""]
     },
     {
@@ -258,7 +283,39 @@
       "exh_ov": "本プロジェクトは2014年から4年間継続し今年度で終了する。これまでに様々な実験・制作を行ったが、その中からシングルチャンネルの映像作品のダイジェストを展示する。また、本学に関係する舞台作品を高解像度でアーカイブする「IAMAS PERFORMANCE ARCHIVE」も紹介する。",
       "lec_ja": ["前田 真二郎","瀬川 晃","伊村 靖子"],
       "lec_en": ["MAEDA Shinjiro","SEGAWA Akira","IMURA Yasuko"],
-      "works": [""]
+      "proj_img": "proj_hd2.jpg",
+      "works": [
+        {
+          "wname_ja": "時間軸を持つマンガ表現の研究",
+          "wname_en": "Manga expression with a time axis",
+          "wprof": "マンガのコマ割りに着目し、時間軸を持った新たなマンガ表現を探った作品。１作目「パラサイトカラコン」では、コマの中にコマを配置しズームイン/アウトで展開する手法を試みた。２作目では、１作目の手法に加え、右上から左下へと向かう従来のコマの読み順に逆らったカメラワークを取り入れ、表現を深めていった。",
+          "author_ja": ["尾焼津 早織"],
+          "author_en": ["OYAIZU Saori"],
+          "author_prof": ["1995年生まれ、横浜育ち。相模女子大学生活デザイン学科卒業。"],
+          "author_web": [""],
+          "thumbnail": "pw_hd2_1.jpg"
+        },
+        {
+          "wname_ja": "混合する光",
+          "wname_en": "Mixing Light",
+          "wprof": "僕らは常に人間的なフィルター（経験に基づく思考、感情、意思、意識など）を通して目の前の事物を認識してしまう。つまり僕らが見ているものは視覚的に捉えた像を様々な情報と混ぜ合わせた、頭の中のイメージなのではないか。僕はカメラのように、光をただ光として受け入れたいと思った。",
+          "author_ja": ["杉山 一真"],
+          "author_en": ["SUGIYAMA Kazuma"],
+          "author_prof": ["1994年生まれ、愛知県出身。名古屋学芸大学メディア造形学部映像メディア学科卒。"],
+          "author_web": [""],
+          "thumbnail": "pw_hd2_2.jpg"
+        },
+        {
+          "wname_ja": "欲求の三部作",
+          "wname_en": "Trilogy of desire",
+          "wprof": "内的な欲求と外的なものの関係性を描いた、三つのアニメーション作品。１作目は自身の思春期初めての人を好きなる欲求と恐怖を描いた。２作目は足が入れ替わる経験がかつての足を自分のものと分からなくなる自己の不安定さを描いた。３作目は生殖が肉体から切り離され、関わりが自分の内的な欲求しかない人間の姿を描いた。 ",
+          "author_ja": ["西本 昂生"],
+          "author_en": ["NISHIMOTO Koki"],
+          "author_prof": ["福井大学美術教育サブコース卒。IAMASではテクノロジーと人間がどうやって付き合っていくか考えている。現在はアニメーション制作が主になっている。"],
+          "author_web": [""],
+          "thumbnail": "pw_hd2_3.jpg"
+        }
+      ]
     },
     {
       "name_ja": "体験拡張環境プロジェクト",
@@ -269,6 +326,7 @@
       "exh_ov": "音楽体験を拡張するための、音の入力に対してリアクティブな複数のLEDキューブにより構成されたデバイスや、ライブパフォーマンスにおける奏者の感情の変化をライブの演出に反映させるためのセンシングに関わる調査、作品制作を人工知能に行わせることで、人間の感性や主体性について考えさせる作品などを展示する。",
       "lec_ja": ["平林真実","小林孝浩"],
       "lec_en": ["Masami Hirabayashi","Takahiro Kobayashi"],
+      "proj_img": "proj_eee.jpg",
       "works": [
         {
           "wname_ja": "憧憬の鏡",
@@ -277,7 +335,8 @@
           "author_ja": ["西本　昂生","飯島　祥"],
           "author_en": ["Koki Nishimoto","Sho Iijima"],
           "author_prof": ["福井大学美術教育サブコース卒。IAMASではテクノロジーと人間がどうやって付き合っていくか考えている。現在はアニメーション制作が主になっている。","九州大学工学部卒。音楽体験を豊かにするために、ライブ空間における感情センシングをテーマとして作品制作を行っている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_eee_1.jpg"
         },
         {
           "wname_ja": "Melody Candy",
@@ -286,7 +345,8 @@
           "author_ja": ["飯島　祥","アン　セビン"],
           "author_en": ["Sho Iijima","Sebin An"],
           "author_prof": ["九州大学工学部卒。音楽体験を豊かにするために、ライブ空間における感情センシングをテーマとして作品制作を行っている。","1995年生まれ。韓国出身。ソウル芸術大学卒業。自然物の動きを表現することをテーマにして制作を行っている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_eee_2.jpg"
         },
         {
           "wname_ja": "葉っぱの世界",
@@ -295,7 +355,8 @@
           "author_ja": ["アン　セビン"],
           "author_en": ["AN Sebin"],
           "author_prof": ["1995年生まれ。韓国出身。ソウル芸術大学卒業。自然物の動きを表現することをテーマにして制作を行っている。"],
-          "author_web": [""]
+          "author_web": [""],
+          "thumbnail": "pw_eee_3.jpg"
         }
       ]
     },
@@ -308,6 +369,7 @@
       "exh_ov": "本展示では、今年度の実施した主な連携活動や、現在運営しているしているOBOGインタビューサイト等、実際の制作物ととも紹介する。",
       "lec_ja": ["金山 智子","小林茂","瀬川 晃"],
       "lec_en": ["KANAYAMA Tomoko","KOBAYASHI Shigeru","SEGAWA Akira"],
+      "proj_img": "proj_rcic.png",
       "works": [""]
     },
     {
@@ -319,6 +381,7 @@
       "exh_ov": "冬の風物詩とも言える樽見鉄道とイアマスのコラボ企画「クラブトレイン」。今回は2018年1月に実施されたCLUB TRAIN2018の映像を上映。",
       "lec_ja": ["金山智子","平林真実"],
       "lec_en": ["KANAYAMA Tomoko","Masami Hirabayashi"],
+      "proj_img": "proj_taru.png",
       "works": [""]
     },
     {
@@ -330,6 +393,7 @@
       "exh_ov": "図書館の活動として、毎週IAMAS図書館にて行なっているレクチャー「今週の一冊」の記録映像と、これまでに紹介した書物を展示する。また期間中に「今週の一冊」の実演もおこなう。",
       "lec_ja": ["小林 昌廣","前田 真二郎","松井 茂","伊村靖子"],
       "lec_en": ["KOBAYASHI Masahiro","MAEDA Shinjiro","MATSUI Shigeru","IMURA Yasuko"],
+      "proj_img": "proj_lib.jpg",
       "works": [""]
     }
   ]

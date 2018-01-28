@@ -1,0 +1,202 @@
+.page__projects {
+  .layout__container--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200%;
+    height: 100%;
+    transform: translate3d(0,0,0);
+    transition: all 500ms;
+    &.is-active {
+      transform: translate3d(-50%,0,0);
+    }
+    h2 {
+      &:before {
+        width: calc(210% + 50px);
+      }
+    }
+    article {
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .layout__container--content {
+      padding: 0;
+      ul {
+        li {
+          margin: 15px 0 0;
+          cursor: pointer;
+          &:hover {
+            h3 {
+              opacity: .7;
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
+          h3 {
+            font-size: 21px;
+            line-height: 40px;
+            font-weight: normal;
+            position: relative;
+            &:after {
+              content: '';
+              width: 8px;
+              height: 8px;
+              border-top: 1px solid $color-base-black;
+              border-right: 1px solid $color-base-black;
+              transform: rotate(45deg) translateY(-50%);
+              display: inline-block;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+    .projects__wrapper {
+      .projects__content {
+        width: 100%;
+        padding: 40px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .main {
+          width: 60%;
+          padding: 0 15px;
+          box-sizing: border-box;
+          position: relative;
+          img {
+            display: block;
+            width: 100%;
+            padding: 0 0 20px;
+          }
+          h3 {
+            padding: 10px 0 0;
+            font-size: 21px;
+            line-height: 30px;
+            color: $color-key;
+            &:after {
+              content: attr(data-en);
+              font-size: 14px;
+              line-height: 20px;
+              color: $color-accent-text;
+              display: block;
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-accent-text;
+          }
+          h4 {
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-accent-text;
+            font-weight: bold;
+          }
+          ul {
+            li {
+              margin: 10px 0 0;
+              font-size: 14px;
+              color: $color-accent-text;
+            }
+          }
+          .btn_prev, .btn_next {
+            position: absolute;
+            display: block;
+            background: none;
+            border: none;
+            top: 245px;
+            cursor: pointer;
+            &:before {
+              content: '\f054';
+              font-family: FontAwesome;
+              font-size: 20px;
+              color: $color-key;
+            }
+          }
+          .btn_prev {
+            left: -20px;
+            &:before {
+              content: '\f053';
+            }
+          }
+          .btn_next {
+            right: -20px;
+            &:before {
+              content: '\f054';
+            }
+          }
+        }
+        .works {
+          position: relative;
+          width: calc(40% - 20px);
+          padding: 0 0 0 40px;
+          margin: 0 0 0 20px;
+          box-sizing: border-box;
+          z-index: 10;
+          &:before {
+            content: '';
+            position: fixed;
+            width: calc(20% - 10px);
+            background: $color-base-gray;
+            height: 200%;
+            top: 0;
+            right: 0;
+            z-index: 0;
+          }
+          .slick-dots {
+            position: absolute;
+            li {
+              button {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $color-key;
+                &:before {
+                  display: none;
+                }
+              }
+              &.slick-active {
+                button {
+                  background: $color-key;
+                }
+              }
+            }
+          }
+          h4 {
+            margin: 15px 0 0;
+            font-size: 18px;
+            line-height: 26px;
+            color: $color-key;
+            &:after {
+              display: block;
+              content: attr(data-en);
+              font-size: 14px;
+              line-height: 20px;
+              color: $color-accent-text;
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-accent-text;
+          }
+          h5 {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+            color: $color-accent-text;
+          }
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

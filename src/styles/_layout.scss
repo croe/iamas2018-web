@@ -20,7 +20,6 @@
   }
   @include e(container) {
     width: auto;
-    overflow: hidden;
     @include m(wrapper) {
       position: relative;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, white 100%);
@@ -42,7 +41,6 @@
       }
       article {
         position: relative;
-        max-width: 1280px;
         width: 100%;
         margin: 0 auto;
         padding: 100px 50px 100px;

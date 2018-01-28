@@ -14,7 +14,6 @@ class Navigation extends Component {
     this.setState({
         loc: window.location.pathname
     });
-    console.log(this.state.loc);
   }
 
   render() {

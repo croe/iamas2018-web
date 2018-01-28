@@ -139,7 +139,7 @@ class Event extends Component {
                         </div>
                     </article>
                     <article>
-                        <div onClick={this.backTabListHandleClick.bind(this)}>Back</div>
+                        <div className="btn_back" onClick={this.backTabListHandleClick.bind(this)}>タイムテーブルへ戻る</div>
                         <div>{tabContent()}</div>
                         <div>{prevButton()}</div>
                         <div>{nextButton()}</div>
