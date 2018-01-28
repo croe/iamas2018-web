@@ -7,20 +7,20 @@
     top: 0;
     left: 0;
     z-index: 10;
-    &:before {
-      content: '';
-      width: 150px;
-      position: absolute;
-      top: 0;
-      left: 50px;
-      height: 100%;
-      z-index: 10;
-      transition: all 1200ms;
-      transform: scaleX(0);
-      transform-origin: left;
-      background: linear-gradient(to right, rgba(0,65,97,1) 0%,rgba(0,65,97,1) 80%,rgba(128,160,176,1) 90%,rgba(255,255,255,0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004161', endColorstr='#00ffffff',GradientType=1 );
-    }
+    // &:before {
+    //   content: '';
+    //   width: 150px;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 50px;
+    //   height: 100%;
+    //   z-index: 10;
+    //   transition: all 1200ms;
+    //   transform: scaleX(0);
+    //   transform-origin: left;
+    //   background: linear-gradient(to right, rgba(0,65,97,1) 0%,rgba(0,65,97,1) 80%,rgba(128,160,176,1) 90%,rgba(255,255,255,0) 100%);
+    //   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004161', endColorstr='#00ffffff',GradientType=1 );
+    // }
     &:hover {
       &:before {
         transform: scaleX(1);
@@ -89,6 +89,22 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@include max-screen($breakpoint-sm){
+  .layout {
+    @include e(navigation) {
+      z-index: -1;
+      &:before {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        font-family: "Font-Awesome";
+        content: '\f0c9';
+        z-index: 10;
       }
     }
   }
