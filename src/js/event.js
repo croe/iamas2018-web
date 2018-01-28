@@ -79,18 +79,27 @@ class Event extends Component {
         this.setState({ itemIndex: ind })
     }
 
+    createMarkup(content){
+        return {__html: content};
+    }
+
     render() {
 
         let tabList = this.state.data.map((item, index) => {
             let guest = "";
             let level = "level" + item.level;
             if (item.guest) {
-                guest = "ゲスト：" + item.guest + "（" + item.guest_posi + "）";
+                // guest = "ゲスト：" + item.guest + "（" + item.guest_posi + "）";
+                guest = "ゲスト：" + item.guest;
             }
             return (
                 <li key={index} onClick={e => this.showTabContentHandleClick(e, item, index)}>
-                    <p><span className="date">{item.date} </span><span className="plase">{item.place} </span><span
-                        className="guest">{guest}</span></p>
+                    <p>
+                        <span className="label">{item.label}</span>
+                        <span className="date">{item.date} </span>
+                        <span className="place">{item.place} </span>
+                        <span className="guest">{guest}</span>
+                    </p>
                     <h3 className={level}>{item.title}</h3>
                 </li>
             )
@@ -107,32 +116,80 @@ class Event extends Component {
         })
 
         let tabContent = () => {
-            let guest = () => {
+            let data = this.state.data[this.state.itemIndex];
+            let imgsrc = "/images/" + data.event_img;
+            if (data.guest) {
+                if (data.guest_prof){
+                    return (
+                        <div className="event_detail">
+                            <div className="event_head">
+                                <p><span className="label">{data.label}</span><span className="date">{data.date}</span><span className="place">{data.place}</span></p>
+                                <h4>{data.title}</h4>
+                                <p>ゲスト：{data.guest}({data.guest_posi})</p>
+                                {prevButton()}
+                                {nextButton()}
+                            </div>
+                            <div className="event_content">
+                                <p  dangerouslySetInnerHTML={this.createMarkup(data.content)} />
+                            </div>
+                            <div className="event_guest">
+                                <div className="prof_img">
+                                    <img src={imgsrc} alt={data.guest}/>
+                                </div>
+                                <div className="profile">
+                                    <h5>{data.guest}</h5>
+                                    <p  dangerouslySetInnerHTML={this.createMarkup(data.guest_prof)} />
+                                </div>
+                            </div>
+                        </div>
+                    )
+                } else {
+                    return (
+                        <div className="event_detail">
+                            <div className="event_head">
+                                <p><span className="label">{data.label}</span><span className="date">{data.date}</span><span className="place">{data.place}</span></p>
+                                <h4>{data.title}</h4>
+                                <p>ゲスト：{data.guest}({data.guest_posi})</p>
+                                {prevButton()}
+                                {nextButton()}
+                            </div>
+                            <div className="event_content no-guest">
+                                <div className="event_img">
+                                    <img src={imgsrc} alt={data.title}/>
+                                </div>
+                                <div className="content">
+                                    <p  dangerouslySetInnerHTML={this.createMarkup(data.content)} />
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
+            } else {
                 return (
-                    <div className="event_guest">
-                        hoge
+                    <div className="event_detail">
+                        <div className="event_head">
+                            <p><span className="label">{data.label}</span><span className="date">{data.date}</span><span className="place">{data.place}</span></p>
+                            <h4>{data.title}</h4>
+                            {prevButton()}
+                            {nextButton()}
+                        </div>
+                        <div className="event_content no-guest">
+                            <div className="event_img">
+                                <img src={imgsrc} alt={data.title}/>
+                            </div>
+                            <div className="content">
+                                <p  dangerouslySetInnerHTML={this.createMarkup(data.content)} />
+                            </div>
+                        </div>
                     </div>
                 )
             }
-            return (
-                <div className="event_detail">
-                    <div className="event_head">
-
-                    </div>
-                    <div className="event_content">
-
-                    </div>
-                    {guest()}
-                    <p>{this.state.data[this.state.itemIndex].content}</p>
-                    <p>{this.state.itemIndex}</p>
-                </div>
-            )
         }
 
         let prevButton = () => {
             if (this.state.itemIndex !== 0){
                 return (
-                    <button onClick={this.prevItemHandleClick.bind(this)}>prev</button>
+                    <button className="btn_prev" onClick={this.prevItemHandleClick.bind(this)} />
                 )
             }
         }
@@ -140,7 +197,7 @@ class Event extends Component {
         let nextButton = () => {
             if (this.state.itemIndex !== this.state.data.length - 1){
                 return (
-                    <button onClick={this.nextItemHandleClick.bind(this)}>next</button>
+                    <button className="btn_next" onClick={this.nextItemHandleClick.bind(this)} />
                 )
             }
         }
@@ -163,11 +220,10 @@ class Event extends Component {
                             </div>
                         </div>
                     </article>
-                    <article>
+                    <article className="layout__container--content">
+                        <h2>{this.state.tabIndex[this.state.tabSelected]}</h2>
                         <div className="btn_back" onClick={this.backTabListHandleClick.bind(this)}>タイムテーブルへ戻る</div>
-                        <div>{tabContent()}</div>
-                        <div>{prevButton()}</div>
-                        <div>{nextButton()}</div>
+                        {tabContent()}
                     </article>
                 </main>
             </div>

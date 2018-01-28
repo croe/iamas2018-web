@@ -69,6 +69,27 @@
             color: $color-key;
           }
         }
+        p {
+          .label {
+            padding: 2px 5px;
+            background: $color-accent-icon;
+            color: $color-base-white;
+            display: inline-block;
+          }
+          .date {
+            display: inline-block;
+            margin: 0 0 0 10px;
+            font-weight: bold;
+          }
+          .place {
+            display: inline-block;
+            margin: 0 0 0 10px;
+          }
+          .guest {
+            display: inline-block;
+            margin: 0 0 0 10px;
+          }
+        }
       }
     }
   }

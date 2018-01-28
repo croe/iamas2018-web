@@ -55,6 +55,7 @@
     "react": "^15.0.2",
     "react-countup": "^3.0.2",
     "react-dom": "^15.0.2",
+    "react-magnific-popup": "^1.0.1",
     "react-modal": "^2.3.2",
     "react-perfect-scrollbar": "^0.2.3",
     "react-qr-reader": "^2.0.0",

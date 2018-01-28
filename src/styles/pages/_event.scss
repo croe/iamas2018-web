@@ -22,6 +22,133 @@
         padding: 40px 0 0 40px;
         box-sizing: border-box;
       }
+      &.layout__container--content {
+        h2 {
+          position: absolute;
+          top: 0;
+          left: 50px;
+        }
+        .event_detail {
+          width: 100%;
+          padding: 20px 40px 0;
+          box-sizing: border-box;
+          .event_head {
+            position: relative;
+            padding: 0 0 20px;
+            margin: 0 0 20px;
+            border-bottom: 1px solid $color-accent-text;
+            p {
+              margin: 0;
+              .label {
+                font-size: 18px;
+                background: $color-key;
+                padding: 2px 8px;
+                color: $color-base-white;
+              }
+              .date {
+                font-size: 21px;
+                display: inline-block;
+                margin: 0 0 0 20px;
+              }
+              .place {
+                font-size: 21px;
+                display: inline-block;
+                margin: 0 0 0 20px;
+              }
+            }
+            h4 {
+              font-size: 30px;
+              line-height: 1.4;
+              color: $color-key;
+            }
+          }
+          .event_content {
+            p {
+              margin: 0;
+              font-size: 14px;
+              color: $color-accent-text;
+              line-height: 28px;
+              letter-spacing: 0.3px;
+            }
+            &.no-guest {
+              width: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              .event_img {
+                width: 360px;
+                img {
+                  display: block;
+                  width: 100%;
+                }
+              }
+              .content {
+                width: calc(100% - 360px);
+                padding: 0 0 0 25px;
+                box-sizing: border-box;
+              }
+            }
+          }
+          .event_guest {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+            padding: 40px 0 0;
+            .prof_img {
+              width: 360px;
+              img {
+                display: block;
+                width: 100%;
+              }
+            }
+            .profile {
+              width: calc(100% - 360px);
+              padding: 0 0 0 25px;
+              box-sizing: border-box;
+              h5 {
+                padding: 20px 0;
+                font-size: 24px;
+                font-weight: normal;
+                color: $color-key;
+              }
+              p {
+                margin: 0;
+                font-size: 14px;
+                color: $color-accent-text;
+                line-height: 20px;
+              }
+            }
+          }
+          .btn_prev, .btn_next {
+            position: absolute;
+            display: block;
+            background: none;
+            border: none;
+            top: 30px;
+            cursor: pointer;
+            &:before {
+              content: '\f054';
+              font-family: FontAwesome;
+              font-size: 35px;
+              color: $color-key;
+            }
+          }
+          .btn_prev {
+            left: -60px;
+            &:before {
+              content: '\f053';
+            }
+          }
+          .btn_next {
+            right: -60px;
+            &:before {
+              content: '\f054';
+            }
+          }
+        }
+      }
     }
   }
 }

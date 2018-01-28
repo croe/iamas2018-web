@@ -6,7 +6,7 @@
         "place": "イベントホール",
         "content": "オープニングセレモニーを開催します。",
         "level": 0,
-        "label": "トークイベント",
+        "label": "セレモニー",
         "guest": false,
         "guest_posi": false,
         "event_img": false
@@ -17,7 +17,7 @@
         "place": "イベントホール",
         "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "相談会",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
@@ -31,11 +31,11 @@
         "place": "イベントホール",
         "content": "人体とロボットアームによるパフォーマンス、八時間にわたる即興舞踊。修士１年のダンサーKei Minouraが振付け/ 演出/ 機械制御を行う。人々が行き交う日常風景の中で、人体とロボットアームがただひたすらに動きをつむぎ合っていく。「途切れることなく、尽きることなく、ただ営々と営まれる人と機械の戯れをロボットアームとシームレスに踊り続ける身体で表現する。かつては従者であったテクノロジーに依存を強め、私たちはそれ無しでは存在できないほど破綻した主従関係を経験している。ロボットを制御する私と、私の一部に組み込まれたロボットの、永遠のカノンをおどる。」",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "パフォーマンス",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
-        "event_img": false
+        "event_img": "event_1.jpg"
       },
       {
         "title": "進学相談会",
@@ -43,7 +43,7 @@
         "place": "イベントホール",
         "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "相談会",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
@@ -57,9 +57,9 @@
         "level": 1,
         "label": "トークイベント",
         "guest": "伊藤亜紗",
-        "guest_prof": false,
+        "guest_prof": "1979年東京都生まれ。東京工業大学リベラルアーツ研究教育院准教授。専門は美学、現代アート。もともと生物学者を目指していたが、大学３年次より文転。2010年に東京大学大学院人文社会系研究科基礎文化研究専攻美学芸術学専門分野博士課程を単位取得のうえ退学。同年、博士号を取得（文学）。主な著作に『目の見えない人は世界をどう見ているのか』（光文社）、『目の見えないアスリートの身体論』（潮出版）、『ヴァレリーの芸術哲学、あるいは身体の解剖』（水声社）。参加作品に小林耕平《タ•イ•ム•マ•シ•ン》（国立近代美術館）など。WIRED Audi INNOVATION AWARD 2017受賞。吃音をモチーフに、体のコントロールできなさやリズムの力について論じた『どもる体』を医学書院より近日刊行予定。",
         "guest_posi": "東京工業大学リベラルアーツ研究教育院准教授",
-        "event_img": false
+        "event_img": "guest_2.jpeg"
       },
       {
         "title": "IAMASイノベーション工房 第2回「建築情報学—建築をデジタル技術による広がりの先に再定義する」",
@@ -71,7 +71,7 @@
         "guest": "豊田啓介",
         "guest_prof": false,
         "guest_posi": "noiz共同主宰、gluonパートナー",
-        "event_img": false
+        "event_img": "event_2.png"
       }
     ],
     "date3": [
@@ -81,11 +81,11 @@
         "place": "イベントホール",
         "content": "人体とロボットアームによるパフォーマンス、八時間にわたる即興舞踊。修士１年のダンサーKei Minouraが振付け/ 演出/ 機械制御を行う。人々が行き交う日常風景の中で、人体とロボットアームがただひたすらに動きをつむぎ合っていく。「途切れることなく、尽きることなく、ただ営々と営まれる人と機械の戯れをロボットアームとシームレスに踊り続ける身体で表現する。かつては従者であったテクノロジーに依存を強め、私たちはそれ無しでは存在できないほど破綻した主従関係を経験している。ロボットを制御する私と、私の一部に組み込まれたロボットの、永遠のカノンをおどる。」",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "パフォーマンス",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
-        "event_img": false
+        "event_img": "event_1.jpg"
       },
       {
         "title": "進学相談会",
@@ -93,7 +93,7 @@
         "place": "イベントホール",
         "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "相談会",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
@@ -109,7 +109,7 @@
         "guest": "中島守",
         "guest_prof": false,
         "guest_posi": "岐阜県博物館長",
-        "event_img": false
+        "event_img": "event_3.jpg"
       },
       {
         "title": "AIと人間の関係性 -協働・共創から見える新たな視点-",
@@ -119,9 +119,9 @@
         "level": 1,
         "label": "トークイベント",
         "guest": "徳井直生",
-        "guest_prof": false,
+        "guest_prof": "東京大学工学系研究科電子工学専攻博士課程修了。工学博士。ソニーコンピュータサイエンス研究所パリ客員研究員などを経て、2009年にQosmoを設立。AIと人の共生による創造性の拡張の可能性を模索している。近作にAIを用いたブライアン・イーノのミュージックビデオの制作など。また、AI DJプロジェクトと題し、AIのDJと自分が一曲ずつかけあうスタイルでのDJパフォーマンスを国内外で続けている。主な展示に、2011年「N Building」(「Talk to Me」展／ニューヨーク現代美術館）、2017年「The Latent Future」(Open Space 2017／NTT ICC） 。",
         "guest_posi": "(株)Qosmo代表取締役 / メディアアーティスト / DJ",
-        "event_img": false
+        "event_img": "guest_1.jpeg"
       },
       {
         "title": "Creative Coding Community for the Future",
@@ -131,9 +131,9 @@
         "level": 1,
         "label": "トークイベント",
         "guest": "清水基",
-        "guest_prof": false,
+        "guest_prof": "1984年生まれ 東京出身。 国際情報科学芸術アカデミー IAMAS DSPコース卒業、School for Poetic Computation卒業。 IT系企業数社に務めた後、2015年より少人数のプロダクションチーム backspacetokyo を共同主催。コードカルチャーに根差した表現をモットーに、柔軟な姿勢で映像制作・ライブ演出テクニカルサポート・VJ・R&D・モバイルアプリケーション開発・Web制作等、様々な場面でフットワーク軽く働いている。",
         "guest_posi": "backspacetokyo共同主宰",
-        "event_img": false
+        "event_img": "guest_3.jpg"
       },
       {
         "title": "ふすま de ネオマトペ",
@@ -141,23 +141,23 @@
         "place": "根尾コ・クリエイション展示スペース",
         "content": "根尾＋オノマトペ（＝音や状態を言葉で表したもの）、ネオマトペ。 根尾の人たちが集めたネオマトペからふすま絵を作ってみましょう。根尾に住む人が表現した根尾から住んでない人々が感じる根尾をふすまの上に表現していきます。",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "ワークショップ",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
-        "event_img": false
+        "event_img": "event_4.jpg"
       },
       {
         "title": "体験拡張環境プロジェクト特別講義「リアルタイムCG表現の今」",
         "date": "15:00",
         "place": "イベントホール",
-        "content": "Unityのグラフィクス・プログラミングにおける世界屈指のコントリビュータであり、VJとして高度な映像演出を手がける高橋啓治郎（Keijiro Takahashi）氏を迎え、特別ワークショップを開催。Unityにおけるグラフィクス・プログラミングについてレクチャーしていただきます。ワークショップ参加のお申込みは[こちら](link)から。時間: 15:00- 講義（参加自由）、15:30- ハンズオン（要申し込み）",
+        "content": "Unityのグラフィクス・プログラミングにおける世界屈指のコントリビュータであり、VJとして高度な映像演出を手がける高橋啓治郎（Keijiro Takahashi）氏を迎え、特別ワークショップを開催。Unityにおけるグラフィクス・プログラミングについてレクチャーしていただきます。ワークショップ参加のお申込みは<a href='https://goo.gl/forms/8jdyXzkZmW5v5WtJ3' target='_blank'>こちら</a>から。<br />時間: 15:00- 講義（参加自由）、15:30- ハンズオン（要申し込み）",
         "level": 1,
-        "label": "トークイベント",
+        "label": "ワークショップ",
         "guest": "高橋啓治郎",
-        "guest_prof": false,
+        "guest_prof": "大手ゲームメーカーに10年間在籍の後、独立。フリーランスのプログラマーとしてiOS/Androidアプリの開発に携わりつつ、Unityを使っての個人制作や、書籍の執筆等を手がける。現在はUnity Technologies Japanにエバンジェリストとして所属し、国内におけるUnityの伝導活動に勤しんでいる。",
         "guest_posi": "ユニティー・テクノロジーズ・ジャパン合同会社",
-        "event_img": false
+        "event_img": "guest_4.jpg"
       },
       {
         "title": "「多層時間構造の音楽」ライブ&トーク",
@@ -165,11 +165,11 @@
         "place": "イベントホール",
         "content": "修士2年の大和比呂志の研究「多層時間構造による音楽」の研究発表としてのミニライブを修士作品\"Music for multilayared temporal structures\"に参加したドラマーのよしじまともひと氏、ベーシストの川本悠自氏を迎え、大和本人も加わったギタートリオでの再演を行います。また、音楽家であり大和の研究主査でもある三輪眞弘教授も迎えて演奏者、研究者、主査でのトークも併せて行います。",
         "level": 0,
-        "label": "トークイベント",
+        "label": "ライブ",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
-        "event_img": false
+        "event_img": "event_5.png"
       },
       {
         "title": "ウェルカム・パーティー",
@@ -177,21 +177,45 @@
         "place": "イベントホール",
         "content": "オープニングセレモニーを開催します。",
         "level": 0,
-        "label": "トークイベント",
+        "label": "パーティ",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
         "event_img": false
+      },
+      {
+        "title": "NxPC.Live vol.29",
+        "date": "20:00-23:00",
+        "place": "ソフトピア地下1階駐車場",
+        "content": "NxPC.Lab（新次元多層メディア的クラブ体験研究室）は、クラブやライブ空間における体験の拡張をテーマに、活動しているプロジェクトです。徳井直生氏、高橋啓治郎氏、清水基氏ら豪華ゲストと、在校生、卒業生を交えたクラブ・パフォーマンスをおこなうナイト・イベントです。",
+        "level": 0,
+        "label": "クラブイベント",
+        "guest": false,
+        "guest_prof": false,
+        "guest_posi": false,
+        "event_img": "event_8.png"
       }
     ],
     "date4": [
+      {
+        "title": "クリティカル・サイクリング早朝耐寒ライド",
+        "date": "8:00-11:00",
+        "place": "イベントホール",
+        "content": "IAMAS周辺を約1時間20km程度ライドし、この地域特有のモーニング文化に触れるべく喫茶店での朝食会を行います。モーニング代金500円程度をお持ちください。悪天時はライドを中止し、朝食会のみ実施します。詳細は<a href='http://criticalcycling.com' target='_blank'>http://criticalcycling.com</a>をご覧ください。",
+        "level": 0,
+        "label": "アクティビティ",
+        "guest": false,
+        "guest_prof": false,
+        "guest_posi": false,
+        "event_img": "event_6.jpg"
+      },
       {
         "title": "進学相談会",
         "date": "10:00-18:00",
         "place": "イベントホール",
         "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
         "level": 0,
-        "label": "アザーイベント",
+        "label": "相談会",
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
@@ -219,7 +243,7 @@
         "guest": false,
         "guest_prof": false,
         "guest_posi": false,
-        "event_img": false
+        "event_img": "event_7.jpg"
       }
     ]
 }
