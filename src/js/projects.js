@@ -57,7 +57,7 @@ class Projects extends Component {
         let ind;
         if (this.state.itemIndex >= projectData.projects.length -1){ ind = 0;}
         else { ind = this.state.itemIndex + 1; }
-        this.setState({ itemIndex: ind })
+        this.setState({ itemIndex: ind });
     }
 
     render() {

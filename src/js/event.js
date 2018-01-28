@@ -15,7 +15,9 @@ class Event extends Component {
         this.state = {
             data: eventData.date3,
             item: {},
-            itemIndex: 0
+            itemIndex: 3,
+            tabSelected: 2,
+            tabIndex: ["22日(木)","23日(金)","24日(土)","25日(日)"]
         }
     }
 
@@ -45,7 +47,8 @@ class Event extends Component {
         }
         this.setState({
             data: this.state.data,
-            itemIndex: 0
+            itemIndex: 0,
+            tabSelected: index
         })
     }
 
@@ -80,21 +83,46 @@ class Event extends Component {
 
         let tabList = this.state.data.map((item, index) => {
             let guest = "";
+            let level = "level" + item.level;
             if (item.guest) {
-                guest = item.guest + "（" + item.guest_posi + "）";
+                guest = "ゲスト：" + item.guest + "（" + item.guest_posi + "）";
             }
             return (
                 <li key={index} onClick={e => this.showTabContentHandleClick(e, item, index)}>
-                    <p><span className="date">{item.date}</span><span className="plase">{item.plase}</span><span
+                    <p><span className="date">{item.date} </span><span className="plase">{item.place} </span><span
                         className="guest">{guest}</span></p>
-                    <h3>{item.title}</h3>
+                    <h3 className={level}>{item.title}</h3>
                 </li>
             )
         });
 
-        let tabContent = () => {
+        let tabHead = this.state.tabIndex.map((item, index) => {
+            let cls = "";
+            if (index === this.state.tabSelected) {
+                cls = "is-active";
+            }
             return (
-                <div>
+                <li className={cls} key={index} onClick={e => this.tabHeadHandleClick(e, index)}>{this.state.tabIndex[index]}</li>
+            )
+        })
+
+        let tabContent = () => {
+            let guest = () => {
+                return (
+                    <div className="event_guest">
+                        hoge
+                    </div>
+                )
+            }
+            return (
+                <div className="event_detail">
+                    <div className="event_head">
+
+                    </div>
+                    <div className="event_content">
+
+                    </div>
+                    {guest()}
                     <p>{this.state.data[this.state.itemIndex].content}</p>
                     <p>{this.state.itemIndex}</p>
                 </div>
@@ -125,10 +153,7 @@ class Event extends Component {
                         <div className="tab">
                             <div className="tab__head">
                                 <ul>
-                                    <li onClick={e => this.tabHeadHandleClick(e, 0)}>22日（木）</li>
-                                    <li onClick={e => this.tabHeadHandleClick(e, 1)}>23日（金）</li>
-                                    <li onClick={e => this.tabHeadHandleClick(e, 2)}>24日（土）</li>
-                                    <li onClick={e => this.tabHeadHandleClick(e, 3)}>25日（日）</li>
+                                    {tabHead}
                                 </ul>
                             </div>
                             <div className="tab__content">
