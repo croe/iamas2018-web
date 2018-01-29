@@ -149,7 +149,7 @@ class Index extends Component {
                             </div>
                         </div>
                     </article>
-                    <article id="related" id="related" className="access">
+                    <article id="related" className="related">
                         <h2 data-subtitle="関連コーナー">Related</h2>
                         <div className="layout__container--content">
                           <p>進学相談</p>
