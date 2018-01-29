@@ -118,18 +118,37 @@ class Index extends Component {
                             </div>
                         </div>
                     </article>
-                    <article>
+                    <article className="event">
                         <h2 data-subtitle="イベント">Event</h2>
                         <div className="layout__container--content">
                             <p>IAMASを取り巻く多様な考えに触れ、深掘って議論し、共有するために、IAMASの外の各領域で活躍するゲストを招聘しトークイベントやワークショップを多数おこないます。展示とあわせて、スケジュールのご確認の上、是非ご参加ください。</p>
                             <h3>ゲスト一覧</h3>
-                            <p>伊藤 亜紗 - 東京工業大学リベラルアーツ研究教育院准教授<br/>
-                                豊田 啓介 - noiz共同主宰、gluonパートナー<br/>
-                                中島 守 - 岐阜県博物館長<br/>
-                                徳井 直生 - (株)Qosmo代表取締役 / メディアアーティスト / DJ<br/>
-                                清水 基 - backspacetokyo共同主宰<br/>
-                                高橋 啓治郎 - ユニティー・テクノロジーズ・ジャパン合同会社<br/>
-                            </p>
+                            <ul>
+                              <li className="event__guest">
+                                <span className="event__guest__name">伊藤 亜紗</span>
+                                <span className="event__guest__title">東京工業大学リベラルアーツ研究教育院准教授</span>
+                              </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">豊田 啓介</span>
+                                <span className="event__guest__title">noiz共同主宰、gluonパートナー</span>
+                              </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">中島 守</span>
+                                <span className="event__guest__title">岐阜県博物館長</span>
+                              </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">徳井 直生</span>
+                                <span className="event__guest__title">(株)Qosmo代表取締役 / メディアアーティスト / DJ</span>
+                              </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">清水 基</span>
+                                <span className="event__guest__title">backspacetokyo共同主宰</span>
+                              </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">高橋 啓治郎</span>
+                                <span className="event__guest__title">ユニティー・テクノロジーズ・ジャパン合同会社</span>
+                              </li>
+                            </ul>
                             <div className="layout__container--content__more">
                                 <Link to="/event">More</Link>
                             </div>
@@ -147,13 +166,13 @@ class Index extends Component {
                             </div>
                         </div>
                     </article>
-                    <article id="related" className="related">
+                    <article className="related">
                         <h2 data-subtitle="関連コーナー">Related</h2>
                         <div className="layout__container--content">
-                          <p>進学相談</p>
+                          <h3 className="related__header">進学相談</h3>
                           <p>ご自身の研究や入試、IAMASでの研究や学生生活について直接希望する教員に相談・質問することができます。</p>
-                          <p>カフェ 南原食堂</p>
-                          <p>あの南原食堂が、卒展にあわせて特別カフェをオープンします、是非お立ち寄りください。</p>
+                          <h3 className="related__header">カフェ 南原食堂</h3>
+                          <p>あの南原食堂が、卒展にあわせて特別カフェをオープンします。是非お立ち寄りください。</p>
                         </div>
                     </article>
                     <article id="access" id="access" className="access">
@@ -163,19 +182,26 @@ class Index extends Component {
                             <p>
                                 &lt;大垣駅より&gt;<br/>
                                 タクシー： JR大垣駅南口から約5分<br/>
-                                バス： JR 大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）<br/>
-                            </p>
+                                バス： JR 大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）</p>
+                            <p>情報科学芸術大学院大学［IAMAS] 〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
                         </div>
                     </article>
                     <article id="contact" className="contact">
                         <h2 data-subtitle="お問い合わせ">Contact</h2>
                         <div className="layout__container--content">
-                            <p>IAMAS 2018へのお問い合わせはこちらまでお寄せください。</p>
-                            <p>情報科学芸術大学院大学［IAMAS] 〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
-                            <p>TEL: <a href="tel:0584756600">0584-75-6600</a></p>
-                            <p>FAX: 0584-75-6637</p>
-                            <p><a href="mailto:event@ml.iamas.ac.jp">event@ml.iamas.ac.jp</a></p>
-                            <p><a href="http://www.iamas.ac.jp" target="_blank">http://www.iamas.ac.jp</a></p>
+                            <p>
+                              TEL: <a href="tel:0584756600">0584-75-6600</a><br/>
+                              FAX: 0584-75-6637<br/>
+                              <a href="mailto:event@ml.iamas.ac.jp">event@ml.iamas.ac.jp</a></p>
+                              <ul className="contact__sns">
+                                  <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
+                                      src="/images/icon_facebook.svg"/></a></li>
+                                  <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img
+                                      src="/images/icon_twitter.svg"/></a></li>
+                                  <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img
+                                      src="/images/icon_instagram.svg"/></a></li>
+                              </ul>
+                            <a href="http://www.iamas.ac.jp"><img src="/images/footer_logo.png" /></a>
                         </div>
                     </article>
                 </main>

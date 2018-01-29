@@ -143,3 +143,11 @@
     }
   }
 }
+
+@include max-screen($breakpoint-sm){
+  #works__content {
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
