@@ -8,6 +8,7 @@ import pluging from 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap
 import {TweenMax, Power2, TimelineLite} from 'gsap';
 
 import YouTube from 'react-youtube';
+import LightButtons from './components/lightButtons'
 
 class Index extends Component {
   constructor(props) {
@@ -83,18 +84,18 @@ class Index extends Component {
             <div className="layout__container--content">
               <p>第16期生修了研究発表者　(計12名/50音順)</p>
               <ul>
-                <li>井上　奈那美</li>
-                <li>大和　比呂志</li>
-                <li>加藤　明洋</li>
-                <li>北詰　和徳</li>
-                <li>髙坂　聖太郎</li>
-                <li>後藤　良太</li>
-                <li>冨田　弓絵</li>
-                <li>永松　歩</li>
-                <li>浜田　卓之</li>
-                <li>原田　和馬</li>
-                <li>山口　伊生人</li>
-                <li>綿貫　岳海</li>
+                <li>井上 奈那美</li>
+                <li>大和 比呂志</li>
+                <li>加藤 明洋</li>
+                <li>北詰 和徳</li>
+                <li>髙坂 聖太郎</li>
+                <li>後藤 良太</li>
+                <li>冨田 弓絵</li>
+                <li>永松 歩</li>
+                <li>浜田 卓之</li>
+                <li>原田 和馬</li>
+                <li>山口 伊生人</li>
+                <li>綿貫 岳海</li>
               </ul>
               <div className="layout__container--content__more">
                 <Link to="/works">More</Link>
@@ -106,12 +107,12 @@ class Index extends Component {
             <div className="layout__container--content">
               <p>IAMASを取り巻く多様な考えに触れ、深掘って議論し、共有するために、IAMASの外の各領域で活躍するゲストを招聘しトークイベントやワークショップを多数おこないます。展示とあわせて、スケジュールのご確認の上、是非ご参加ください。</p>
               <h3>ゲスト一覧</h3>
-              <p>伊藤亜紗 - 東京工業大学リベラルアーツ研究教育院准教授<br/>
-                豊田啓介 - noiz共同主宰、gluonパートナー<br/>
-                中島守 - 岐阜県博物館長<br/>
-                徳井直生 - (株)Qosmo代表取締役 / メディアアーティスト / DJ<br/>
-                清水基 - backspacetokyo共同主宰<br/>
-                高橋啓治郎 - ユニティー・テクノロジーズ・ジャパン合同会社<br/>
+              <p>伊藤 亜紗 - 東京工業大学リベラルアーツ研究教育院准教授<br/>
+                豊田 啓介 - noiz共同主宰、gluonパートナー<br/>
+                中島 守 - 岐阜県博物館長<br/>
+                徳井 直生 - (株)Qosmo代表取締役 / メディアアーティスト / DJ<br/>
+                清水 基 - backspacetokyo共同主宰<br/>
+                高橋 啓治郎 - ユニティー・テクノロジーズ・ジャパン合同会社<br/>
               </p>
               <div className="layout__container--content__more">
                 <Link to="/event">More</Link>
@@ -157,6 +158,7 @@ class Index extends Component {
             </div>
           </article>
         </main>
+        <LightButtons/>
       </div>
     );
   }

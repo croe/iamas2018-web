@@ -31,8 +31,9 @@ class Navigation extends Component {
                   <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul className="sns">
-                  <li><a href="#"><img src="/images/icon_facebook.svg"/></a></li>
-                  <li><a href="#"><img src="/images/icon_twitter.svg"/></a></li>
+                <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img src="/images/icon_facebook.svg"/></a></li>
+                <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img src="/images/icon_twitter.svg"/></a></li>
+                <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img src="/images/icon_instagram.svg"/></a></li>
                 </ul>
               </nav>
             </div>
@@ -51,8 +52,9 @@ class Navigation extends Component {
                   <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact">Contact</Link></li>
                 </ul>
                 <ul className="sns">
-                  <li><a href="#"><img src="/images/icon_facebook.svg"/></a></li>
-                  <li><a href="#"><img src="/images/icon_twitter.svg"/></a></li>
+                  <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img src="/images/icon_facebook.svg"/></a></li>
+                  <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img src="/images/icon_twitter.svg"/></a></li>
+                  <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img src="/images/icon_instagram.svg"/></a></li>
                 </ul>
               </nav>
             </div>
