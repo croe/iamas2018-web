@@ -13,7 +13,9 @@ import magnificPopup from 'magnific-popup';
 class Works extends Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            selected: 0
+        }
     }
 
     componentDidMount() {
@@ -27,27 +29,32 @@ class Works extends Component {
         });
         $('.mfp-popup').magnificPopup({
             delegate: 'li',
-            type: 'image',
+            type: 'inline',
             closeOnContentClick: true,
             closeBtnInside: false,
+            showCloseBtn: false,
             fixedContentPos: true,
-            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+            mainClass: 'mfp-fade', // 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
             image: {
-                verticalFit: true
+                verticalFit: true,
             },
             gallery:{
                 enabled:true
             },
-            zoom: {
-                enabled: true,
-                duration: 500 // don't foget to change the duration also in CSS
-            },
             callbacks: {
                 change: function(){
-                    console.log(this)
+                    it.setState({
+                        selected: this.index
+                    })
                 }
             }
         });
+    }
+
+    showWorksHandleClick(e, index){
+        this.setState({
+            selected: index
+        })
     }
 
     render() {
@@ -55,9 +62,10 @@ class Works extends Component {
         // もっとシンプルにしたい
         let works_list1 = workData.works.map((item, index) => {
             let imgsrc = "/images/" + item.image_1x1;
+            let opensrc = "/include/" + item.image_16x9;
             if (index === 0 || index === 1 || index === 2 || index === 3) {
                 return (
-                    <li key={index} data-author={item.name_en} href={imgsrc}>
+                    <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -65,9 +73,10 @@ class Works extends Component {
         });
         let works_list2 = workData.works.map((item, index) => {
             let imgsrc = "/images/" + item.image_1x1;
+            let imgsrc2 = "/images/" + item.image_16x9;
             if (index === 4 || index === 5 || index === 6 || index === 7 || index === 8) {
                 return (
-                    <li key={index} data-author={item.name_en} href={imgsrc}>
+                    <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -75,14 +84,37 @@ class Works extends Component {
         });
         let works_list3 = workData.works.map((item, index) => {
             let imgsrc = "/images/" + item.image_1x1;
+            let imgsrc2 = "/images/" + item.image_16x9;
             if (index === 9 || index === 10 || index === 11 || index === 12) {
                 return (
-                    <li key={index} data-author={item.name_en} href={imgsrc}>
+                    <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
             }
         });
+
+        let modal__content = () => {
+            let wd = workData.works[this.state.selected];
+            let imgsrc = "/images/" + wd.image_16x9;
+            return (
+                <div className="wrapper">
+                    <button className="btn_close" />
+                    <div className="overview">
+                        <div className="photo">
+                            <img src={imgsrc} alt={wd.title_en}/>
+                        </div>
+                        <h3 data-en={wd.title_en}>{wd.title_ja}</h3>
+                        <p>{wd.content}</p>
+                    </div>
+                    <div className="author">
+                        <h4 data-en={wd.name_en}>{wd.name_ja}</h4>
+                        <p>{wd.profile}</p>
+                        <a href={wd.website} target="_blank">{wd.website}</a>
+                    </div>
+                </div>
+            )
+        }
 
         return (
             <div className="layout__container page__works">
@@ -96,6 +128,9 @@ class Works extends Component {
                         </div>
                     </article>
                 </main>
+                <div id="works__content">
+                    {modal__content()}
+                </div>
             </div>
         );
     }

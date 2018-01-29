@@ -1,26 +1,12 @@
 .layout {
   @include e(navigation) {
     position: fixed;
-    width: 50px;
+    width: 300px;
     height: 100%;
     background: $color-key;
     top: 0;
     left: 0;
-    z-index: 10;
-    // &:before {
-    //   content: '';
-    //   width: 150px;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 50px;
-    //   height: 100%;
-    //   z-index: 10;
-    //   transition: all 1200ms;
-    //   transform: scaleX(0);
-    //   transform-origin: left;
-    //   background: linear-gradient(to right, rgba(0,65,97,1) 0%,rgba(0,65,97,1) 80%,rgba(128,160,176,1) 90%,rgba(255,255,255,0) 100%);
-    //   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004161', endColorstr='#00ffffff',GradientType=1 );
-    // }
+    z-index: 0;
     &:hover {
       &:before {
         transform: scaleX(1);
@@ -53,21 +39,10 @@
             justify-content: flex-start;
             align-items: center;
             font-size: 0;
-            padding: 0 0 0 50px;
+            padding: 0;
             height: 70px;
             color: $color-base-white;
             text-decoration: none;
-            &:before {
-              content: '';
-              position: absolute;
-              width: 15px;
-              height: 15px;
-              background: $color-base-white;
-              border-radius: 50%;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
-            }
           }
         }
       }
@@ -84,8 +59,8 @@
               display: block;
               width: 20px;
               top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
+              left: 14.5px;
+              transform: translateY(-50%);
             }
           }
         }
