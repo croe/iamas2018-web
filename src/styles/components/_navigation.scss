@@ -16,6 +16,9 @@
     &.is-active {
       left: 0;
     }
+    @include e(hamb) {
+      display: none;
+    }
     @include m(wrapper) {
       position: absolute;
       top: 50%;
@@ -78,14 +81,22 @@
 @include max-screen($breakpoint-sm){
   .layout {
     @include e(navigation) {
-      z-index: -1;
-      &:before {
-        position: absolute;
-        left: 12px;
-        top: 12px;
-        font-family: "FontAwesome";
-        content: '\f0c9';
-        z-index: 10;
+      z-index: 0;
+      @include m(wrapper) {
+        z-index: -1;
+      }
+      @include e(hamb) {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        left: 9px;
+        top: 16px;
+        &:after {
+          color: $color-base-white;
+          font-family: "FontAwesome";
+          font-size: 38px;
+          content: '\f0c9';
+        }
       }
     }
   }

@@ -27,6 +27,11 @@ class Navigation extends Component {
         $('.transition_owner').removeClass('is-active');
     }
 
+    toggleNavigation() {
+        $('.layout__navigation').toggleClass('is-active');
+        $('.transition_owner').toggleClass('is-active');
+    }
+
     render() {
         if (this.state.loc === "/") {
             return (
@@ -52,6 +57,7 @@ class Navigation extends Component {
                                 src="/images/icon_instagram.svg"/></a></li>
                         </ul>
                     </nav>
+                    <div className="layout__navigation__hamb" onClick={this.toggleNavigation.bind(this)} />
                 </div>
             );
         } else {
@@ -79,6 +85,7 @@ class Navigation extends Component {
                                 src="/images/icon_instagram.svg"/></a></li>
                         </ul>
                     </nav>
+                    <div className="layout__navigation__hamb" onClick={this.toggleNavigation.bind(this)} />
                 </div>
             );
         }
