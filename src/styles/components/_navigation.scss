@@ -5,12 +5,16 @@
     height: 100%;
     background: $color-key;
     top: 0;
-    left: 0;
-    z-index: 0;
+    left: -100px;
+    z-index: 10;
+    transition: all 500ms;
     &:hover {
       &:before {
         transform: scaleX(1);
       }
+    }
+    &.is-active {
+      left: 0;
     }
     @include m(wrapper) {
       position: absolute;
@@ -28,9 +32,9 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 28px;
-            padding: 0 0 0 50px;
+            padding: 0 50px 0 10px;
             height: 70px;
             color: $color-base-white;
             text-decoration: none;
@@ -42,7 +46,7 @@
               background: $color-base-white;
               border-radius: 50%;
               top: 50%;
-              left: 19px;
+              right: 19px;
               transform: translateY(-50%);
             }
           }
@@ -61,7 +65,7 @@
               display: block;
               width: 20px;
               top: 50%;
-              left: 14px;
+              right: 14px;
               transform: translateY(-50%);
             }
           }

@@ -18,10 +18,12 @@ class Navigation extends Component {
     }
 
     showNavigation() {
+        $('.layout__navigation').addClass('is-active');
         $('.transition_owner').addClass('is-active');
     }
 
     hideNavigation() {
+        $('.layout__navigation').removeClass('is-active');
         $('.transition_owner').removeClass('is-active');
     }
 

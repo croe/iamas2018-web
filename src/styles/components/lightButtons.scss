@@ -1,6 +1,6 @@
 .lightButtons {
   .lightButtons__button {
-    position: absolute;
+    position: fixed;
     @include max-screen($breakpoint-sm){
       display: none;
     }

@@ -21,7 +21,9 @@ class Works extends Component {
     componentDidMount() {
         let it = this;
         let $window = $(window);
-        $('.transition_owner').removeClass('is-active');
+
+        $("html, body").animate({scrollTop: 0}, 500, "swing");
+
         $('.bg_live').css({'height': $window.innerHeight()});
         $('.layout__container').css({'height': $window.innerHeight()});
         $window.on('resize', () => {

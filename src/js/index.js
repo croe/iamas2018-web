@@ -19,7 +19,6 @@ class Index extends Component {
     componentDidMount() {
         let it = this;
         let $window = $(window);
-        $('.transition_owner').removeClass('is-active');
         $('.mainvisual').css({'height': $window.innerHeight()});
         $window.on('resize', () => {
             $('.mainvisual').css({'height': $window.innerHeight()});
@@ -32,7 +31,6 @@ class Index extends Component {
          * Anchor link Animation
          */
         $("a[href^='#']").on('click', function () {
-            $('.transition_owner').removeClass('is-active');
             let speed = 500,
                 href = $(this).attr("href"),
                 target = $(href == "#" || href == "" ? 'html' : href),
