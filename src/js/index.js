@@ -44,8 +44,11 @@ class Index extends Component {
     return (
       <div className="layout__container page__index">
         <main className="layout__container--wrapper">
-          <article className="mainvisual">
+          <article className="mainvisual pc">
             <img src="/images/title.svg" alt=""/>
+          </article>
+          <article className="mainvisual sp">
+            <img src="/images/title_sp.svg" alt=""/>
           </article>
           <article id="info">
             <h2 data-subtitle="開催概要">Information</h2>
@@ -71,20 +74,8 @@ class Index extends Component {
               日々の生活で感じた些細な違和感や関心を向けたさりげないこと、<br/>
               合理的判断によって切り捨てられてしまうようなことに気付き、表現してきた。<br/>
               そしてそれは、多様な考え方が広がる社会を支えることに繋がるはずだ。</p><br/>
-
               <p>IAMAS2018を巡り、私たちの表現に触れることが、<br/>
                 未知との遭遇ではなく、既に知っていたことの再発見となるだろう。</p>
-            </div>
-          </article>
-          <article>
-            <h2 data-subtitle="イベント">Event</h2>
-            <div className="layout__container--content">
-              <p>IAMAS2017のテーマ「ひらく」をキーワードに ゲストを招いたトークイベントやライブ、学生有志によるパフォーマンスなどを企画しました。</p><br/>
-              <p>私たちの日常はあらゆる可能性を秘めています。<br/>
-                それらの可能性を「ひらく」ことについて、各々のイベントを通して考えていきます。</p>
-                <div className="layout__container--content__more">
-                  <Link to="/event">More</Link>
-                </div>
             </div>
           </article>
           <article>
@@ -111,6 +102,23 @@ class Index extends Component {
             </div>
           </article>
           <article>
+            <h2 data-subtitle="イベント">Event</h2>
+            <div className="layout__container--content">
+              <p>IAMASを取り巻く多様な考えに触れ、深掘って議論し、共有するために、IAMASの外の各領域で活躍するゲストを招聘しトークイベントやワークショップを多数おこないます。展示とあわせて、スケジュールのご確認の上、是非ご参加ください。</p>
+              <h3>ゲスト一覧</h3>
+              <p>伊藤亜紗 - 東京工業大学リベラルアーツ研究教育院准教授<br/>
+                豊田啓介 - noiz共同主宰、gluonパートナー<br/>
+                中島守 - 岐阜県博物館長<br/>
+                徳井直生 - (株)Qosmo代表取締役 / メディアアーティスト / DJ<br/>
+                清水基 - backspacetokyo共同主宰<br/>
+                高橋啓治郎 - ユニティー・テクノロジーズ・ジャパン合同会社<br/>
+              </p>
+              <div className="layout__container--content__more">
+                <Link to="/event">More</Link>
+              </div>
+            </div>
+          </article>
+          <article>
             <h2 data-subtitle="プロジェクト研究発表">Projects</h2>
             <div className="layout__container--content">
               <p>
@@ -121,16 +129,26 @@ class Index extends Component {
               </div>
             </div>
           </article>
-          <article id="access">
+          <article>
+            <h2 data-subtitle="関連コーナー">Related</h2>
+            <p>進学相談</p>
+            <p>南原食堂</p>
+          </article>
+          <article>
             <h2 data-subtitle="アクセス">Access</h2>
             <div className="layout__container--content">
               <img src="/images/map.svg" alt=""/>
+              <p>
+                &lt;大垣駅より&gt;<br/>
+                タクシー： JR大垣駅南口から約5分<br/>
+                バス： JR 大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）<br/>
+              </p>
             </div>
           </article>
           <article id="contact" className="contact">
             <h2 data-subtitle="お問い合わせ">Contact</h2>
             <div className="layout__container--content">
-              <p>IAMAS 2017へのお問い合わせはこちらまでお寄せください。</p>
+              <p>IAMAS 2018へのお問い合わせはこちらまでお寄せください。</p>
               <p>情報科学芸術大学院大学［IAMAS] 〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
               <p>TEL: <a href="tel:0584756600">0584-75-6600</a></p>
               <p>FAX: 0584-75-6637</p>

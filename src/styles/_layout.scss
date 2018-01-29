@@ -26,6 +26,12 @@
       .mainvisual {
         max-width: 100%;
         width: 100%;
+        &.pc {
+          display: block;
+        }
+        &.sp {
+          display: none;
+        }
         img {
           width: 70%;
           display: block;
@@ -84,7 +90,7 @@
       @include e(more){
         position: absolute;
         padding: 4px 8px;
-        right: 50px;
+        right: 72px;
         a {
           display: block;
           font-weight: 600;
@@ -137,8 +143,14 @@
         background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, white 100%);
         overflow-y: scroll;
         .mainvisual {
+          &.pc {
+            display: none;
+          }
+          &.sp {
+            display: block;
+          }
           img {
-            width: 122%;
+            width: 86%;
           }
         }
         article {
