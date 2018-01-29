@@ -207,18 +207,19 @@
     .layout__container--wrapper {
       .layout__container--content {
         padding: 20px 0 0;
-      }
-      .projects__wrapper {
-        .projects__content {
-          display: block;
-          ul {
-            li {
-              h3 {
-                font-size: calc(21px * 0.8);
-                line-height: calc(40px * 0.8);
-              }
+        ul {
+          li {
+            h3 {
+              font-size: 15px;
+              line-height: 30px;
             }
           }
+        }
+      }
+      .projects__wrapper {
+        padding: 100px 30px 50px;
+        .projects__content {
+          display: block;
           .main {
             width: 100%;
             .btn_prev, .btn_next {
@@ -231,6 +232,9 @@
             width: 100%;
             &:before {
               display: none;
+            }
+            .slick-dots {
+              bottom: 100%;
             }
           }
         }
