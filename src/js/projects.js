@@ -22,6 +22,7 @@ class Projects extends Component {
     componentDidMount() {
         let it = this;
         let $window = $(window);
+        $('.transition_owner').removeClass('is-active');
         $('.bg_live').css({'height': $window.innerHeight()});
         $('.layout__container--wrapper').css({'height': $window.innerHeight()});
         // $('.slick-dots').css({top: $('.works_thumb').height() + 20});
@@ -149,7 +150,7 @@ class Projects extends Component {
         }
 
         return (
-            <div className="layout__container page__projects">
+            <div onMouseEnter={this.h} className="layout__container page__projects">
                 <main className="layout__container--wrapper">
                     <article>
                         <h2 data-subtitle="プロジェクト研究発表">Projects</h2>

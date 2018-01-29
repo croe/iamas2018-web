@@ -1,4 +1,18 @@
 //Layout
+.transition_owner {
+  &.is-active {
+    .bg_live {
+      transition: all 500ms;
+      left: 150px;
+      z-index: 99;
+    }
+    .layout__container {
+      transition: all 500ms;
+      left: 100px;
+      z-index: 100;
+    }
+  }
+}
 .layout {
   width: calc(100% - 50px);
   margin: 0 0 0 50px;
@@ -9,6 +23,7 @@
     position: fixed;
     top: 0;
     left: 50px;
+    transition: all 500ms;
     span {
       display: block;
       height: 100%;
@@ -19,7 +34,10 @@
     }
   }
   @include e(container) {
+    position: relative;
     width: auto;
+    left: 0;
+    //box-shadow: -2px 0 10px 2px rgba(0,0,0,0.15);
     @include m(wrapper) {
       position: relative;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, white 100%);

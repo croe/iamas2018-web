@@ -24,6 +24,7 @@ class Event extends Component {
     componentDidMount() {
         let it = this;
         let $window = $(window);
+        $('.transition_owner').removeClass('is-active');
         $('.bg_live').css({'height': $window.innerHeight()});
         $('.layout__container').css({'height': $window.innerHeight()});
         $window.on('resize', () => {

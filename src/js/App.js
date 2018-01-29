@@ -43,16 +43,18 @@ class App extends Component {
     return (
       <div className="layout">
         <Navigation />
-        <div className="bg_live">
-          <YouTube
-              videoId="KMBBuCbQL_g"
-              opts={opts}
-              onReady={this._onReady}
-          />
-        </div>
-        {this.props.children && React.cloneElement(this.props.children, {
-          _it: this
-        })}
+          <div className="transition_owner">
+              <div className="bg_live">
+                  <YouTube
+                      videoId="KMBBuCbQL_g"
+                      opts={opts}
+                      onReady={this._onReady}
+                  />
+              </div>
+              {this.props.children && React.cloneElement(this.props.children, {
+                  _it: this
+              })}
+          </div>
       </div>
     )
   }

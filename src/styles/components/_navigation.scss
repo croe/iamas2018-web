@@ -1,7 +1,7 @@
 .layout {
   @include e(navigation) {
     position: fixed;
-    width: 300px;
+    width: 150px;
     height: 100%;
     background: $color-key;
     top: 0;
@@ -11,16 +11,16 @@
       &:before {
         transform: scaleX(1);
       }
-      .layout__navigation--wrapper {
-        ul.menu {
-          li {
-            a {
-              font-size: 18px;
-              line-height: 28px;
-            }
-          }
-        }
-      }
+      //.layout__navigation--wrapper {
+      //  ul.menu {
+      //    li {
+      //      a {
+      //        font-size: 18px;
+      //        line-height: 28px;
+      //      }
+      //    }
+      //  }
+      //}
     }
     @include m(wrapper) {
       position: absolute;
@@ -38,11 +38,23 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            font-size: 0;
-            padding: 0;
+            font-size: 18px;
+            line-height: 28px;
+            padding: 0 0 0 50px;
             height: 70px;
             color: $color-base-white;
             text-decoration: none;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              background: $color-base-white;
+              border-radius: 50%;
+              top: 50%;
+              left: 16px;
+              transform: translateY(-50%);
+            }
           }
         }
       }
