@@ -147,12 +147,16 @@ class Index extends Component {
                             </div>
                         </div>
                     </article>
-                    <article>
+                    <article id="related" className="related">
                         <h2 data-subtitle="関連コーナー">Related</h2>
-                        <p>進学相談</p>
-                        <p>南原食堂</p>
+                        <div className="layout__container--content">
+                          <p>進学相談</p>
+                          <p>ご自身の研究や入試、IAMASでの研究や学生生活について直接希望する教員に相談・質問することができます。</p>
+                          <p>カフェ 南原食堂</p>
+                          <p>あの南原食堂が、卒展にあわせて特別カフェをオープンします、是非お立ち寄りください。</p>
+                        </div>
                     </article>
-                    <article id="access">
+                    <article id="access" id="access" className="access">
                         <h2 data-subtitle="アクセス">Access</h2>
                         <div className="layout__container--content">
                             <img src="/images/map.svg" alt=""/>

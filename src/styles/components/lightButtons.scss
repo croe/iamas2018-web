@@ -4,16 +4,37 @@
     @include max-screen($breakpoint-sm){
       display: none;
     }
-    &::after{
+    &:after{
       content: '';
       position: absolute;
       width: 20px;
       height: 20px;
-      background: $color-key;
+      background-color: $color-key;
       border-radius: 50%;
       top: 50%;
       left: 50%;
       cursor: pointer;
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      &:after {
+        width: 24px;
+        height: 24px;
+        top: calc(50% - 2px);
+        left: calc(50% - 2px);
+        background-color: lighten($color-key, 15%);
+        // transition: all 0.2s linear;
+      }
+    }
+    &:active {
+      &:after {
+        width: 40px;
+        height: 40px;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+        background-color: lighten($color-key, 30%);
+        //
+      }
     }
     &.btn__0 {
       // 左下
