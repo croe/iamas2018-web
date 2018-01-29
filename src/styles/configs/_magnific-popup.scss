@@ -175,6 +175,9 @@ button::-moz-focus-inner {
     font-size: 40px;
     color: $color-key;
   }
+  @include max-screen($breakpoint-sm){
+    top: 45%;
+  }
 }
   .mfp-arrow:before, .mfp-arrow:after {
     content: '';
@@ -191,12 +194,18 @@ button::-moz-focus-inner {
   &:before {
     content: '\f053';
   }
+  @include max-screen($breakpoint-sm){
+    left: 8px;
+  }
 }
 
 .mfp-arrow-right {
   right: 50px;
   &:before {
     content: '\f054';
+  }
+  @include max-screen($breakpoint-sm){
+    right: 2px;
   }
 }
 
