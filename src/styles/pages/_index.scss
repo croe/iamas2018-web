@@ -1,3 +1,45 @@
 .page__index {
+  .event {
+    .event__guest {
+      padding: 8px 0;
+      .event__guest__name {
 
+      }
+      .event__guest__title {
+        font-size: 0.8em;
+        color: #888;
+        display: block;
+        line-height: 6px;
+      }
+    }
+
+  }
+  .related {
+    .related__header {
+      padding: 10px 0 0;
+      font-size: 1.1em;
+      &:first-child {
+        padding: 30px 0 0;;
+      }
+    }
+  }
+  .contact {
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+    .contact__sns {
+      padding: 10px;
+      background-color: rgba($color-key, 0.6);
+      border-radius: 6px;
+      height: 60px;
+      width: 140px;
+      margin: 24px 0;
+      li {
+        margin: 8px;
+        display: inline-block;
+        width: 24px;
+      }
+    }
+  }
 }
