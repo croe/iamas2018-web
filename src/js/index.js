@@ -154,7 +154,7 @@ class Index extends Component {
                         <p>進学相談</p>
                         <p>南原食堂</p>
                     </article>
-                    <article>
+                    <article id="access">
                         <h2 data-subtitle="アクセス">Access</h2>
                         <div className="layout__container--content">
                             <img src="/images/map.svg" alt=""/>
