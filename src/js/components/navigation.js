@@ -33,62 +33,30 @@ class Navigation extends Component {
     }
 
     render() {
-        if (this.state.loc === "/") {
-            return (
-                <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)}
-                     className="layout__navigation">
-                    <nav className="layout__navigation--wrapper">
-                        <ul className="menu">
-                            <li><a href="#info">Information</a></li>
-                            <li><a href="#theme">Theme</a></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/event">Event</Link></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/works">Works</Link></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects">Projects</Link>
-                            </li>
-                            <li><a href="#access">Access</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                        <ul className="sns">
-                            <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
-                                src="/images/icon_facebook.svg"/></a></li>
-                            <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img
-                                src="/images/icon_twitter.svg"/></a></li>
-                            <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img
-                                src="/images/icon_instagram.svg"/></a></li>
-                        </ul>
-                    </nav>
-                    <div className="layout__navigation__hamb" onClick={this.toggleNavigation.bind(this)} />
-                </div>
-            );
-        } else {
-            return (
-                <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)}
-                     className="layout__navigation">
-                    <nav className="layout__navigation--wrapper">
-                        <ul className="menu">
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#info">Information</Link>
-                            </li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#theme">Theme</Link></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/event">Event</Link></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/works">Works</Link></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects">Projects</Link>
-                            </li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#access">Access</Link></li>
-                            <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact">Contact</Link></li>
-                        </ul>
-                        <ul className="sns">
-                            <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
-                                src="/images/icon_facebook.svg"/></a></li>
-                            <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img
-                                src="/images/icon_twitter.svg"/></a></li>
-                            <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img
-                                src="/images/icon_instagram.svg"/></a></li>
-                        </ul>
-                    </nav>
-                    <div className="layout__navigation__hamb" onClick={this.toggleNavigation.bind(this)} />
-                </div>
-            );
-        }
+        return (
+            <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)}
+                 className="layout__navigation">
+                <nav className="layout__navigation--wrapper">
+                    <ul className="menu">
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#info" data-ja="インフォメーション">Information</Link>
+                        </li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#theme" data-ja="テーマ">Theme</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/event" data-ja="イベント">Event</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/works" data-ja="修士作品">Works</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects" data-ja="プロジェクト">Projects</Link>
+                        </li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#access" data-ja="アクセス">Access</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact" data-ja="お問い合わせ">Contact</Link></li>
+                    </ul>
+                    <ul className="sns">
+                        <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"/></li>
+                        <li><a href="https://twitter.com/iamas_exhibit" target="_blank"/></li>
+                        <li><a href="https://www.instagram.com/iamas2018/" target="_blank"/></li>
+                    </ul>
+                </nav>
+                <div className="layout__navigation__hamb" onClick={this.toggleNavigation.bind(this)}/>
+            </div>
+        );
     }
 }
 
