@@ -24,9 +24,30 @@ class Works extends Component {
         $window.on('resize', () => {
             $('.bg_live').css({'height': $window.innerHeight()});
             $('.layout__container').css({'height': $window.innerHeight()});
-        })
-        console.log($.fn)
-        $('.mfp-popup').magnificPopup({type:'image'});
+        });
+        $('.mfp-popup').magnificPopup({
+            delegate: 'li',
+            type: 'image',
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            fixedContentPos: true,
+            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+            image: {
+                verticalFit: true
+            },
+            gallery:{
+                enabled:true
+            },
+            zoom: {
+                enabled: true,
+                duration: 500 // don't foget to change the duration also in CSS
+            },
+            callbacks: {
+                change: function(){
+                    console.log(this)
+                }
+            }
+        });
     }
 
     render() {
@@ -36,7 +57,7 @@ class Works extends Component {
             let imgsrc = "/images/" + item.image_1x1;
             if (index === 0 || index === 1 || index === 2 || index === 3) {
                 return (
-                    <li className="mfp-popup" key={index} data-author={item.name_en}>
+                    <li key={index} data-author={item.name_en} href={imgsrc}>
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -46,7 +67,7 @@ class Works extends Component {
             let imgsrc = "/images/" + item.image_1x1;
             if (index === 4 || index === 5 || index === 6 || index === 7 || index === 8) {
                 return (
-                    <li className="mfp-popup" key={index} data-author={item.name_en}>
+                    <li key={index} data-author={item.name_en} href={imgsrc}>
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -56,7 +77,7 @@ class Works extends Component {
             let imgsrc = "/images/" + item.image_1x1;
             if (index === 9 || index === 10 || index === 11 || index === 12) {
                 return (
-                    <li className="mfp-popup" key={index} data-author={item.name_en}>
+                    <li key={index} data-author={item.name_en} href={imgsrc}>
                         <img src={imgsrc} alt={item.title_ja}/>
                     </li>
                 )
@@ -69,9 +90,9 @@ class Works extends Component {
                     <article>
                         <h2 data-subtitle="修士研究発表">Works</h2>
                         <div className="layout__container--content">
-                            <ul>{works_list1}</ul>
-                            <ul>{works_list2}</ul>
-                            <ul>{works_list3}</ul>
+                            <ul className="mfp-popup">{works_list1}</ul>
+                            <ul className="mfp-popup">{works_list2}</ul>
+                            <ul className="mfp-popup">{works_list3}</ul>
                         </div>
                     </article>
                 </main>
