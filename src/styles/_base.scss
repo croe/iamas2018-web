@@ -47,6 +47,16 @@ p {
   letter-spacing: 0.3px;
 }
 
+a {
+  text-decoration: none;
+  color: $color-key;
+  transition: color 0.5s;
+  &:hover{
+    color: $color-accent-icon;
+    transition: color 0.5s;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

@@ -8,6 +8,7 @@ import pluging from 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap
 import {TweenMax, Power2, TimelineLite} from 'gsap';
 
 import YouTube from 'react-youtube';
+import LightButtons from './components/lightButtons'
 
 class Index extends Component {
     constructor(props) {
@@ -80,6 +81,22 @@ class Index extends Component {
                                 未知との遭遇ではなく、既に知っていたことの再発見となるだろう。</p>
                         </div>
                     </article>
+                    <article id="theme">
+                        <h2 data-subtitle="テーマ">Theme</h2>
+                        <div className="layout__container--content">
+                            <p><strong>つまずく小石を拾うこと</strong></p><br/>
+                            <p>Scienceという言葉はラテン語のscientiaが語源で、「知っていること」という意味であった。<br/>
+                                現在では科学全般のことを指し、さらにテクノロジーという意味にまで拡張されている。</p><br/>
+                            <p>我々の生活と切り離せない「テクノロジー」。<br/>
+                                テクノロジーによって生活が豊かになる一方で、科学主義的な姿勢が目立つように感じる。</p><br/>
+                            <p>私たちは、本来単純に区別出来ない事象の方が多いはずの世界の中で、<br/>
+                                日々の生活で感じた些細な違和感や関心を向けたさりげないこと、<br/>
+                                合理的判断によって切り捨てられてしまうようなことに気付き、表現してきた。<br/>
+                                そしてそれは、多様な考え方が広がる社会を支えることに繋がるはずだ。</p><br/>
+                            <p>IAMAS2018を巡り、私たちの表現に触れることが、<br/>
+                                未知との遭遇ではなく、既に知っていたことの再発見となるだろう。</p>
+                        </div>
+                    </article>
                     <article>
                         <h2 data-subtitle="修士研究発表">Works</h2>
                         <div className="layout__container--content">
@@ -108,12 +125,12 @@ class Index extends Component {
                         <div className="layout__container--content">
                             <p>IAMASを取り巻く多様な考えに触れ、深掘って議論し、共有するために、IAMASの外の各領域で活躍するゲストを招聘しトークイベントやワークショップを多数おこないます。展示とあわせて、スケジュールのご確認の上、是非ご参加ください。</p>
                             <h3>ゲスト一覧</h3>
-                            <p>伊藤亜紗 - 東京工業大学リベラルアーツ研究教育院准教授<br/>
-                                豊田啓介 - noiz共同主宰、gluonパートナー<br/>
-                                中島守 - 岐阜県博物館長<br/>
-                                徳井直生 - (株)Qosmo代表取締役 / メディアアーティスト / DJ<br/>
-                                清水基 - backspacetokyo共同主宰<br/>
-                                高橋啓治郎 - ユニティー・テクノロジーズ・ジャパン合同会社<br/>
+                            <p>伊藤 亜紗 - 東京工業大学リベラルアーツ研究教育院准教授<br/>
+                                豊田 啓介 - noiz共同主宰、gluonパートナー<br/>
+                                中島 守 - 岐阜県博物館長<br/>
+                                徳井 直生 - (株)Qosmo代表取締役 / メディアアーティスト / DJ<br/>
+                                清水 基 - backspacetokyo共同主宰<br/>
+                                高橋 啓治郎 - ユニティー・テクノロジーズ・ジャパン合同会社<br/>
                             </p>
                             <div className="layout__container--content__more">
                                 <Link to="/event">More</Link>
@@ -137,7 +154,7 @@ class Index extends Component {
                         <p>進学相談</p>
                         <p>南原食堂</p>
                     </article>
-                    <article id="access">
+                    <article>
                         <h2 data-subtitle="アクセス">Access</h2>
                         <div className="layout__container--content">
                             <img src="/images/map.svg" alt=""/>
@@ -160,6 +177,7 @@ class Index extends Component {
                         </div>
                     </article>
                 </main>
+                <LightButtons/>
             </div>
         );
     }

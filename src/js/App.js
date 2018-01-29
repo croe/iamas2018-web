@@ -8,8 +8,7 @@ import Event from './event';
 import Projects from "./projects";
 import Works from './works';
 
-import YouTube from 'react-youtube';
-
+import YouTube from 'react-youtube'
 
 class App extends Component {
 
@@ -25,7 +24,7 @@ class App extends Component {
 
   componentDidMount(){
     let it = this;
-
+    
   }
 
   render() {
@@ -46,7 +45,7 @@ class App extends Component {
           <div className="transition_owner">
               <div className="bg_live">
                   <YouTube
-                      videoId="KMBBuCbQL_g"
+                      videoId="xMmfycqGkZA"
                       opts={opts}
                       onReady={this._onReady}
                   />

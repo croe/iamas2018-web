@@ -28,7 +28,8 @@ class Navigation extends Component {
     render() {
         if (this.state.loc === "/") {
             return (
-                <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)} className="layout__navigation">
+                <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)}
+                     className="layout__navigation">
                     <nav className="layout__navigation--wrapper">
                         <ul className="menu">
                             <li><a href="#info">Information</a></li>
@@ -41,15 +42,20 @@ class Navigation extends Component {
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                         <ul className="sns">
-                            <li><a href="#"><img src="/images/icon_facebook.svg"/></a></li>
-                            <li><a href="#"><img src="/images/icon_twitter.svg"/></a></li>
+                            <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
+                                src="/images/icon_facebook.svg"/></a></li>
+                            <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img
+                                src="/images/icon_twitter.svg"/></a></li>
+                            <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img
+                                src="/images/icon_instagram.svg"/></a></li>
                         </ul>
                     </nav>
                 </div>
             );
         } else {
             return (
-                <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)} className="layout__navigation">
+                <div onMouseEnter={this.showNavigation.bind(this)} onMouseLeave={this.hideNavigation.bind(this)}
+                     className="layout__navigation">
                     <nav className="layout__navigation--wrapper">
                         <ul className="menu">
                             <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#info">Information</Link>
@@ -63,8 +69,12 @@ class Navigation extends Component {
                             <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact">Contact</Link></li>
                         </ul>
                         <ul className="sns">
-                            <li><a href="#"><img src="/images/icon_facebook.svg"/></a></li>
-                            <li><a href="#"><img src="/images/icon_twitter.svg"/></a></li>
+                            <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
+                                src="/images/icon_facebook.svg"/></a></li>
+                            <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img
+                                src="/images/icon_twitter.svg"/></a></li>
+                            <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img
+                                src="/images/icon_instagram.svg"/></a></li>
                         </ul>
                     </nav>
                 </div>
