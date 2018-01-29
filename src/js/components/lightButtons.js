@@ -18,7 +18,6 @@ class LightButton extends Component {
     let current = new Date();
     if ((current - this.lastClick) > 200) {
       DATA_STORE.send({ n: this.state.n });
-      console.log("click " + this.state.n);
 
       this.lastClick = current;
     }

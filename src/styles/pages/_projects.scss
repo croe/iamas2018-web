@@ -67,7 +67,7 @@
         align-items: flex-start;
         .main {
           width: 60%;
-          padding: 0 15px;
+          padding: 0 10px;
           box-sizing: border-box;
           position: relative;
           img {
@@ -231,6 +231,17 @@
             width: 100%;
             &:before {
               display: none;
+            }
+            .slick-dots {
+              position: absolute;
+              top: -40px;
+              bottom: auto;
+              li {
+                button {
+                  &:before {
+                  }
+                }
+              }
             }
           }
         }

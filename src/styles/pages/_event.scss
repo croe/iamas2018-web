@@ -160,14 +160,14 @@
     .layout__container--wrapper {
       article {
         .tab {
-          padding: 40px 0 0 14px;
+          padding: 40px 0 0 0;
         }
         &.layout__container--content {
           h2 {
             left: 30px;
           }
           .event_detail {
-            padding: 20px 0 0;
+            padding: 20px 10px 0;
             .event_head {
               p {
                 .label {

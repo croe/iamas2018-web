@@ -37,7 +37,6 @@ class Projects extends Component {
             item: item,
             itemIndex: index
         })
-        console.log(item, index);
     }
 
     backProjectsHandleClick(){
