@@ -6,15 +6,19 @@ import $ from 'jquery';
 class Navigation extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            loc: window.location.pathname
-        }
+        this.state = {}
     }
 
     pageTransitionHandleClick() {
-        this.setState({
-            loc: window.location.pathname
-        });
+        let hash = window.location.hash;
+        if (hash !== ''){
+            setTimeout(()=> {
+                let speed = 500,
+                    target = $(hash == "#" || hash == "" ? 'html' : hash),
+                    position = target.offset().top;
+                $("html, body").animate({scrollTop: position}, speed, "swing");
+            }, 500)
+        }
     }
 
     showNavigation() {
@@ -38,13 +42,12 @@ class Navigation extends Component {
                  className="layout__navigation">
                 <nav className="layout__navigation--wrapper">
                     <ul className="menu">
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#info" data-ja="インフォメーション">Information</Link>
-                        </li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/" data-ja="トップ">Top</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#info" data-ja="インフォメーション">Information</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#theme" data-ja="テーマ">Theme</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/event" data-ja="イベント">Event</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/works" data-ja="修士作品">Works</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects" data-ja="プロジェクト">Projects</Link>
-                        </li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects" data-ja="プロジェクト">Projects</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#access" data-ja="アクセス">Access</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact" data-ja="お問い合わせ">Contact</Link></li>
                     </ul>

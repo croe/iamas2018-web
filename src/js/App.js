@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {render} from "react-dom";
 import {browserHistory, Router, Route, IndexRoute} from 'react-router';
 import Navigation from './components/navigation';
+import $ from 'jquery';
 
 import Index from './index';
 import Event from './event';
@@ -24,7 +25,32 @@ class App extends Component {
 
   componentDidMount(){
     let it = this;
-    
+
+    if((16/9) > $(window).innerWidth() / $(window).innerHeight()) {
+        $('.bg_live span').css({
+            width: $(window).innerWidth() * (16/9),
+            height: '100%'
+        });
+    } else {
+        $('.bg_live span').css({
+            width: '100%',
+            height: $(window).innerHeight() * (16/9)
+        });
+    }
+
+    $(window).on('resize',() => {
+        if((16/9) > $(window).innerWidth() / $(window).innerHeight()) {
+            $('.bg_live span').css({
+                width: $(window).innerWidth() * (16/9),
+                height: '100%'
+            });
+        } else {
+            $('.bg_live span').css({
+                width: '100%',
+                height: $(window).innerHeight() * (16/9)
+            });
+        }
+    })
   }
 
   render() {
@@ -45,7 +71,7 @@ class App extends Component {
           <div className="transition_owner">
               <div className="bg_live">
                   <YouTube
-                      videoId="xMmfycqGkZA"
+                      videoId="NIASf6x55Pw"
                       opts={opts}
                       onReady={this._onReady}
                   />
@@ -74,5 +100,6 @@ render((
 );
 
 // TODO: トップへ戻るボタン
+// TODO: アンカーが機能しない問題
 // TODO: 横スライド系マージン・パディング調整
-// TODO:
+// TODO: ライトのリップル効果

@@ -10,18 +10,6 @@
         "guest": false,
         "guest_posi": false,
         "event_img": "event_10.jpg"
-      },
-      {
-        "title": "進学相談会",
-        "date": "13:00-18:00",
-        "place": "ソピアホール前イベントスペース",
-        "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
-        "level": 0,
-        "label": "相談会",
-        "guest": false,
-        "guest_prof": false,
-        "guest_posi": false,
-        "event_img": false
       }
     ],
     "date2": [
