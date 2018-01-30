@@ -10,18 +10,7 @@
       "lec_ja": ["鈴木宣也","赤羽亨"],
       "lec_en": ["SUZUKI Nobuya","AKABANE Kyo"],
       "proj_img": "proj_asita.jpg",
-      "works": [
-        {
-          "wname_ja": "洗濯を軸にしたマルチサイドプラットフォーム",
-          "wname_en": "Social Washing Machine",
-          "wprof": "洗濯は家事の中でも負担の大きい作業の一つである。この負担を社会的に分散処理することで多様な働き方にアプローチするとともに、同一時間軸、複数視点のUXを探求する。",
-          "author_ja": ["荏原 洋夢"],
-          "author_en": ["EHARA Hiromu"],
-          "author_prof": ["1995年、新潟県出身。工業高専で電子制御工学、大学でプロダクトデザインを学ぶ。デザインのデザインを探求中。"],
-          "author_web": ["https://hehara17.myportfolio.com"],
-          "thumbnail": "pw_asita_1.png"
-        }
-      ]
+      "works": [""]
     },
     {
       "name_ja": "アートを/で考えるプロジェクト (ATP)",

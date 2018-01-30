@@ -38,18 +38,6 @@
         "event_img": "event_1.jpg"
       },
       {
-        "title": "進学相談会",
-        "date": "10:00-18:00",
-        "place": "ソピアホール前イベントスペース",
-        "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
-        "level": 0,
-        "label": "相談会",
-        "guest": false,
-        "guest_prof": false,
-        "guest_posi": false,
-        "event_img": false
-      },
-      {
         "title": "ポスト20周年 IAMASとメディア・アート",
         "date": "13:00-14:00",
         "place": "ソピアホール前イベントスペース",
@@ -86,18 +74,6 @@
         "guest_prof": false,
         "guest_posi": false,
         "event_img": "event_1.jpg"
-      },
-      {
-        "title": "進学相談会",
-        "date": "10:00-18:00",
-        "place": "ソピアホール前イベントスペース",
-        "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
-        "level": 0,
-        "label": "相談会",
-        "guest": false,
-        "guest_prof": false,
-        "guest_posi": false,
-        "event_img": false
       },
       {
         "title": "RCICトークイベント「博物館と娯楽性」",
@@ -187,7 +163,7 @@
         "title": "NxPC.Live vol.29",
         "date": "20:00-23:30",
         "place": "ソフトピア地下1階駐車場",
-        "content": "NxPC.Lab（新次元多層メディア的クラブ体験研究室）は、クラブやライブ空間における体験の拡張をテーマに、活動しているプロジェクトです。徳井直生氏、高橋啓治郎氏、清水基氏ら豪華ゲストと、在校生、卒業生を交えたクラブ・パフォーマンスをおこなうナイト・イベントです。",
+        "content": "<a href='http://nxpclab.info/'>NxPC.Lab（新次元多層メディア的クラブ体験研究室）</a>は、クラブやライブ空間における体験の拡張をテーマに、活動しているプロジェクトです。徳井直生氏、高橋啓治郎氏、清水基氏ら豪華ゲストと、在校生、卒業生を交えたクラブ・パフォーマンスをおこなうナイト・イベントです。タイムテーブルについては以下をご確認ください。<br>&gt; <a href='https://www.facebook.com/events/433129157106583/' target='_blank'>facebookイベントページ",
         "level": 0,
         "label": "クラブイベント",
         "guest": false,
@@ -208,18 +184,6 @@
         "guest_prof": false,
         "guest_posi": false,
         "event_img": "event_6.jpg"
-      },
-      {
-        "title": "進学相談会",
-        "date": "10:00-18:00",
-        "place": "ソピアホール前イベントスペース",
-        "content": "情報科学芸術大学院大学を詳しく知りたい方、あるいは受験を希望されている方のために、進学相談を実施します。入試やカリキュラムについて、また進路先などのご相談に応じます。",
-        "level": 0,
-        "label": "相談会",
-        "guest": false,
-        "guest_prof": false,
-        "guest_posi": false,
-        "event_img": false
       },
       {
         "title": "トークイベント『「ヘボ追い」ってなに？』",
