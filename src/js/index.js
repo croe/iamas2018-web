@@ -66,7 +66,7 @@ class Index extends Component {
                     <article id="theme">
                         <h2 data-subtitle="テーマ">Theme</h2>
                         <div className="layout__container--content">
-                            <p><strong>つまずく小石を拾うこと</strong></p><br/>
+                            <p><strong>つまずく小石をひろうこと</strong></p><br/>
                             <p>Scienceという言葉はラテン語のscientiaが語源で、「知っていること」という意味であった。<br/>
                                 現在では科学全般のことを指し、さらにテクノロジーという意味にまで拡張されている。</p><br/>
                             <p>我々の生活と切り離せない「テクノロジー」。<br/>
@@ -159,14 +159,14 @@ class Index extends Component {
                           <p>あの南原食堂が、卒展にあわせて特別カフェをオープンします。是非お立ち寄りください。</p>
                         </div>
                     </article>
-                    <article id="access" id="access" className="access">
+                    <article id="access" className="access">
                         <h2 data-subtitle="アクセス">Access</h2>
                         <div className="layout__container--content">
                             <img src="/images/map.svg" alt=""/>
                             <p>
                                 &lt;大垣駅より&gt;<br/>
                                 タクシー： JR大垣駅南口から約5分<br/>
-                                バス： JR 大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）</p>
+                                バス： JR大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）</p>
                             <p>情報科学芸術大学院大学［IAMAS] 〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
                         </div>
                     </article>
