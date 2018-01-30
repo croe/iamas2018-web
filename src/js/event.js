@@ -13,10 +13,10 @@ class Event extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: eventData.date3,
+            data: eventData.date1,
             item: {},
-            itemIndex: 3,
-            tabSelected: 2,
+            itemIndex: 0,
+            tabSelected: 0,
             tabIndex: ["22日(木)","23日(金)","24日(土)","25日(日)"]
         }
     }
