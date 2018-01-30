@@ -144,7 +144,27 @@
   }
 }
 
-@include max-screen($breakpoint-sm){
+@include max-screen($breakpoint-sm) {
+  .page__works {
+    .layout__container--wrapper {
+      .layout__container--content {
+        padding: 0;
+        ul {
+          width: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          li {
+            position: relative;
+            width: 140px;
+            margin: 12 0px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
   #works__content {
     .wrapper {
       width: 100%;
