@@ -57,26 +57,10 @@ class Index extends Component {
                             <p><strong>情報科学芸術大学院大学 第16期生修了研究発表会・プロジェクト研究発表会</strong></p>
                             <p><strong>Graduation and Project Research Exhibition</strong></p>
                             <br/>
-                            <p>日時：2月22日(木)ｰ2月25日(日) 10:00ｰ18:00(初日のみ13:00)</p>
+                            <p>日時：2月22日(木)ｰ2月25日(日) 10:00ｰ18:00(初日のみ13:00から)</p>
                             <p>会場：ソフトピアジャパン センタービル 岐阜県大垣市加賀野4丁目１−７</p>
                             <p>入場：無料</p>
                             <p>主催：情報科学芸術大学院大学[IAMAS]</p>
-                        </div>
-                    </article>
-                    <article id="theme">
-                        <h2 data-subtitle="テーマ">Theme</h2>
-                        <div className="layout__container--content">
-                            <p><strong>つまずく小石を拾うこと</strong></p><br/>
-                            <p>Scienceという言葉はラテン語のscientiaが語源で、「知っていること」という意味であった。<br/>
-                                現在では科学全般のことを指し、さらにテクノロジーという意味にまで拡張されている。</p><br/>
-                            <p>我々の生活と切り離せない「テクノロジー」。<br/>
-                                テクノロジーによって生活が豊かになる一方で、科学主義的な姿勢が目立つように感じる。</p><br/>
-                            <p>私たちは、本来単純に区別出来ない事象の方が多いはずの世界の中で、<br/>
-                                日々の生活で感じた些細な違和感や関心を向けたさりげないこと、<br/>
-                                合理的判断によって切り捨てられてしまうようなことに気付き、表現してきた。<br/>
-                                そしてそれは、多様な考え方が広がる社会を支えることに繋がるはずだ。</p><br/>
-                            <p>IAMAS2018を巡り、私たちの表現に触れることが、<br/>
-                                未知との遭遇ではなく、既に知っていたことの再発見となるだろう。</p>
                         </div>
                     </article>
                     <article id="theme">
@@ -159,7 +143,7 @@ class Index extends Component {
                         <div className="layout__container--content">
                             <p>
                                 プロジェクトは、メディア表現領域の社会的な意義をはかりながら、高度な研究成果や技術開発を目指して、領域横断的に運営される授業群です。今年はIAMASの研究活動の主幹として、多領域に渡るプロジェクト研究が活動しました。「IAMAS
-                                2017」では修士研究発表に加えて、これらプロジェクト研究の成果を展示します。
+                                2018」では修士研究発表に加えて、これらプロジェクト研究の成果を展示します。
                             </p>
                             <div className="layout__container--content__more">
                                 <Link to="/projects">More</Link>
