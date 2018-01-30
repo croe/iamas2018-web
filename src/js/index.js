@@ -7,7 +7,6 @@ import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
 import pluging from 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import {TweenMax, Power2, TimelineLite} from 'gsap';
 
-import YouTube from 'react-youtube';
 import LightButtons from './components/lightButtons'
 
 class Index extends Component {
@@ -103,7 +102,7 @@ class Index extends Component {
                         </div>
                     </article>
                     <article className="event">
-                        <h2 data-subtitle="イベント">Event</h2>
+                        <h2 data-subtitle="イベント">Events</h2>
                         <div className="layout__container--content">
                             <p>IAMASを取り巻く多様な考えに触れ、深掘って議論し、共有するために、IAMASの外の各領域で活躍するゲストを招聘しトークイベントやワークショップを多数おこないます。展示とあわせて、スケジュールのご確認の上、是非ご参加ください。</p>
                             <h3>ゲスト一覧</h3>
@@ -163,11 +162,12 @@ class Index extends Component {
                         <h2 data-subtitle="アクセス">Access</h2>
                         <div className="layout__container--content">
                             <img src="/images/map.svg" alt=""/>
+                            <p>〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
                             <p>
                                 &lt;大垣駅より&gt;<br/>
                                 タクシー： JR大垣駅南口から約5分<br/>
-                                バス： JR大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）</p>
-                            <p>情報科学芸術大学院大学［IAMAS] 〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
+                                バス： JR大垣駅南口から3番乗り場ソフトピア線・羽島線 「ソフトピアジャパン」行き 約10分（1時間に2～3便程度）
+                            </p>
                         </div>
                     </article>
                     <article id="contact" className="contact">
@@ -176,7 +176,7 @@ class Index extends Component {
                             <p>
                               TEL: <a href="tel:0584756600">0584-75-6600</a><br/>
                               FAX: 0584-75-6637<br/>
-                              <a href="mailto:event@ml.iamas.ac.jp">event@ml.iamas.ac.jp</a></p>
+                              MAIL: <a href="mailto:event@ml.iamas.ac.jp">event@ml.iamas.ac.jp</a></p>
                               <ul className="contact__sns">
                                   <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
                                       src="/images/icon_facebook.svg"/></a></li>

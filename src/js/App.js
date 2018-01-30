@@ -71,7 +71,7 @@ class App extends Component {
           <div className="transition_owner">
               <div className="bg_live">
                   <YouTube
-                      videoId="NIASf6x55Pw"
+                      videoId="OS5lfKCOC3A"
                       opts={opts}
                       onReady={this._onReady}
                   />
