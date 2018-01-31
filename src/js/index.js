@@ -131,6 +131,14 @@ class Index extends Component {
                                 <span className="event__guest__name">高橋 啓治郎</span>
                                 <span className="event__guest__title">ユニティー・テクノロジーズ・ジャパン合同会社</span>
                               </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">野中 健一</span>
+                                <span className="event__guest__title">立教大学文学部教授</span>
+                              </li>
+                              <li className="event__guest">
+                                <span className="event__guest__name">高橋 勝幸</span>
+                                <span className="event__guest__title">全国地蜂連合会会長</span>
+                              </li>
                             </ul>
                             <div className="layout__container--content__more">
                                 <Link to="/event">More</Link>
