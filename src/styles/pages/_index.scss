@@ -14,12 +14,27 @@
     }
 
   }
-  .related {
-    .related__header {
+  .others {
+    .others__header {
       padding: 10px 0 0;
       font-size: 1.1em;
       &:first-child {
         padding: 30px 0 0;;
+      }
+    }
+    .others__namb {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      p {
+        box-sizing: border-box;
+      }
+      img {
+        padding: 16px 16px 16px 0;
+        box-sizing: border-box;
+        max-width: 256px;
+        width: 40%;
       }
     }
   }

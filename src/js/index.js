@@ -75,7 +75,7 @@ class Index extends Component {
                                 合理的判断によって切り捨てられてしまうようなことに気付き、表現してきた。<br/>
                                 そしてそれは、多様な考え方が広がる社会を支えることに繋がるはずだ。</p><br/>
                             <p>IAMAS2018を巡り、私たちの表現に触れることが、<br/>
-                                未知との遭遇ではなく、既に知っていたことの再発見となるだろう。</p>
+                                未知との遭遇ではなく、既に知ってしまっていたことの再発見となるだろう。</p>
                         </div>
                     </article>
                     <article>
@@ -157,13 +157,16 @@ class Index extends Component {
                             </div>
                         </div>
                     </article>
-                    <article className="related">
-                        <h2 data-subtitle="関連コーナー">Related</h2>
+                    <article className="others">
+                        <h2 data-subtitle="関連コーナー">Others</h2>
                         <div className="layout__container--content">
-                          <h3 className="related__header">進学相談</h3>
+                          <h3 className="others__header">進学相談</h3>
                           <p>ご自身の研究や入試、IAMASでの研究や学生生活について直接希望する教員に相談・質問することができます。</p>
-                          <h3 className="related__header">カフェ 南原食堂</h3>
-                          <p>あの南原食堂が、卒展にあわせて特別カフェをオープンします。是非お立ち寄りください。</p>
+                          <h3 className="others__header">カフェ 南原食堂</h3>
+                          <div className="others__namb">
+                            <img src="/images/nambara.png" />
+                            <p>岐阜県大垣市を拠点とする南原兄弟によるコミュニティ食堂「<a href="https://www.facebook.com/namshoku/" target="_blank">南原食堂</a>」が、本卒展にあわせて特設カフェをオープンします。是非お立ち寄りください。</p>
+                          </div>
                         </div>
                     </article>
                     <article id="access" className="access">
