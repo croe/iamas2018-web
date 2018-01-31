@@ -84,7 +84,6 @@ class Index extends Component {
                             <p>第16期生修了研究発表者 (計12名/50音順)</p>
                             <ul>
                                 <li>井上 奈那美</li>
-                                <li>大和 比呂志</li>
                                 <li>加藤 明洋</li>
                                 <li>北詰 和徳</li>
                                 <li>髙坂 聖太郎</li>
@@ -94,6 +93,7 @@ class Index extends Component {
                                 <li>浜田 卓之</li>
                                 <li>原田 和馬</li>
                                 <li>山口 伊生人</li>
+                                <li>大和 比呂志</li>
                                 <li>綿貫 岳海</li>
                             </ul>
                             <div className="layout__container--content__more">
