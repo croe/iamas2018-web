@@ -1,5 +1,10 @@
 .page__works {
   .layout__container--wrapper {
+    h2 {
+      &.none {
+        font-size: 0;
+      }
+    }
     .layout__container--content {
       padding: 0;
       ul {
@@ -8,10 +13,14 @@
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
+        max-width: 1024px;
+        margin: 30px auto 0;
         li {
           position: relative;
-          width: 200px;
-          margin: 12px;
+          margin: 0;
+          cursor: pointer;
+          width: calc(100% / 4);
+          padding: 12px;
           cursor: pointer;
           img {
             display: block;
@@ -157,8 +166,9 @@
           flex-wrap: wrap;
           li {
             position: relative;
-            width: 140px;
-            margin: 12px 0;
+            width: calc(100% / 2);
+            margin: 0;
+            padding: 12px ;
             cursor: pointer;
           }
         }

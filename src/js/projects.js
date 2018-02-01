@@ -77,7 +77,11 @@ class Projects extends Component {
             return (
                 <div>
                     <img src={imgsrc} alt={data.name_ja}/>
-                    <h3 data-en={data.name_en}>{data.name_ja}</h3>
+                    <div className="btn_box">
+                        {prevButton()}
+                        {nextButton()}
+                    </div>
+                    <h3 className="top" data-en={data.name_en}>{data.name_ja}</h3>
                     <p>{data.prof}</p>
                     <h3 data-en={data.title_en}>{data.title_ja}</h3>
                     <p>{data.exh_ov}</p>
@@ -162,8 +166,6 @@ class Projects extends Component {
                         <div className="projects__content">
                             <div className="main">
                                 {project_content()}
-                                {prevButton()}
-                                {nextButton()}
                             </div>
                             {project_works()}
                         </div>

@@ -65,8 +65,7 @@ class Works extends Component {
         // もっとシンプルにしたい
         let works_list1 = workData.works.map((item, index) => {
             let imgsrc = "/images/" + item.image_1x1;
-            let opensrc = "/include/" + item.image_16x9;
-            if (index === 0 || index === 1 || index === 2 || index === 3) {
+            if (index !== 12) {
                 return (
                     <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
                         <img src={imgsrc} alt={item.title_ja}/>
@@ -76,19 +75,7 @@ class Works extends Component {
         });
         let works_list2 = workData.works.map((item, index) => {
             let imgsrc = "/images/" + item.image_1x1;
-            let imgsrc2 = "/images/" + item.image_16x9;
-            if (index === 4 || index === 5 || index === 6 || index === 7 || index === 8) {
-                return (
-                    <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
-                        <img src={imgsrc} alt={item.title_ja}/>
-                    </li>
-                )
-            }
-        });
-        let works_list3 = workData.works.map((item, index) => {
-            let imgsrc = "/images/" + item.image_1x1;
-            let imgsrc2 = "/images/" + item.image_16x9;
-            if (index === 9 || index === 10 || index === 11 || index === 12) {
+            if (index === 12) {
                 return (
                     <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
                         <img src={imgsrc} alt={item.title_ja}/>
@@ -126,8 +113,10 @@ class Works extends Component {
                         <h2 data-subtitle="修士研究発表">Works</h2>
                         <div className="layout__container--content">
                             <ul className="mfp-popup">{works_list1}</ul>
+                        </div>
+                        <h2 className="none" data-subtitle="研究生作品">.</h2>
+                        <div className="layout__container--content">
                             <ul className="mfp-popup">{works_list2}</ul>
-                            <ul className="mfp-popup">{works_list3}</ul>
                         </div>
                     </article>
                 </main>
