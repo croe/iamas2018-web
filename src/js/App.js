@@ -16,11 +16,21 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+        youtubeLink: ""
     }
   }
 
   componentWillMount() {
     let it = this;
+      $.ajax({
+          url: "https://sheets.googleapis.com/v4/spreadsheets/1MseugORx0m6TJ9PNxUYulaJA4zK5NykcjGuK0MGiT7M/values/A1:A2?key=AIzaSyBZHoIkxG4HFEflbPr1ha-42IDLLyX7ZuQ",
+          dataType: 'json'
+      }).done(function (data) {
+          console.log(data)
+          it.setState({
+              youtubeLink: data.values[0]
+          })
+      });
   }
 
   componentDidMount(){
@@ -71,7 +81,7 @@ class App extends Component {
           <div className="transition_owner">
               <div className="bg_live">
                   <YouTube
-                      videoId="OS5lfKCOC3A"
+                      videoId={this.state.youtubeLink[0]}
                       opts={opts}
                       onReady={this._onReady}
                   />
