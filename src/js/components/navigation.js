@@ -48,6 +48,7 @@ class Navigation extends Component {
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/event" data-ja="イベント">Events</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/works" data-ja="修士作品">Works</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects" data-ja="プロジェクト">Projects</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#others" data-ja="関連コーナー">Others</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#access" data-ja="アクセス">Access</Link></li>
                         <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact" data-ja="お問い合わせ">Contact</Link></li>
                     </ul>

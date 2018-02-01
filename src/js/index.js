@@ -81,7 +81,7 @@ class Index extends Component {
                     <article>
                         <h2 data-subtitle="修士研究発表">Works</h2>
                         <div className="layout__container--content">
-                            <p>第16期生修了研究発表者 (計12名/50音順)</p>
+                            <p>第16期生修了研究発表者 (修了生12名、研究生1名)</p>
                             <ul>
                                 <li>井上 奈那美</li>
                                 <li>加藤 明洋</li>
@@ -95,6 +95,7 @@ class Index extends Component {
                                 <li>山口 伊生人</li>
                                 <li>大和 比呂志</li>
                                 <li>綿貫 岳海</li>
+                                <li>塚原 真梨佳 (研究生)</li>
                             </ul>
                             <div className="layout__container--content__more">
                                 <Link to="/works">More</Link>
@@ -157,15 +158,20 @@ class Index extends Component {
                             </div>
                         </div>
                     </article>
-                    <article className="others">
+                    <article id="others" className="others">
                         <h2 data-subtitle="関連コーナー">Others</h2>
                         <div className="layout__container--content">
                           <h3 className="others__header">進学相談</h3>
-                          <p>ご自身の研究や入試、IAMASでの研究や学生生活について直接希望する教員に相談・質問することができます。</p>
+                          <div className="others__content">
+                            <img src="/images/other_1.jpg" />
+                            <p>ご自身の研究や入試、IAMASでの研究や学生生活について直接希望する教員に相談・質問することができます。</p>
+                          </div>
                           <h3 className="others__header">カフェ 南原食堂</h3>
-                          <div className="others__namb">
-                            <img src="/images/nambara.png" />
-                            <p>岐阜県大垣市を拠点とする南原兄弟によるコミュニティ食堂「<a href="https://www.facebook.com/namshoku/" target="_blank">南原食堂</a>」が、本卒展にあわせて特設カフェをオープンします。是非お立ち寄りください。</p>
+                          <div className="others__content">
+                            <img src="/images/other_2.png" />
+                            <div className="others__content">
+                              <p>岐阜県大垣市を拠点とする南原兄弟によるコミュニティ食堂「<a href="https://www.facebook.com/namshoku/" target="_blank">南原食堂</a>」が、本卒展にあわせて特設カフェをオープンします。是非お立ち寄りください。 ※ 2月24日(土)、25日(日)のみ営業</p>
+                            </div>
                           </div>
                         </div>
                     </article>
