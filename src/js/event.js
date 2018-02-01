@@ -31,6 +31,12 @@ class Event extends Component {
         $window.on('resize', () => {
             $('.bg_live').css({'height': $window.innerHeight()});
         })
+        if ($('.layout__container--wrapper').height() < $(window).innerHeight()) {
+            $('.layout__container--wrapper').css({'minHeight': $window.innerHeight()});
+            $window.on('resize', () => {
+                $('.layout__container--wrapper').css({'minHeight': $window.innerHeight()});
+            })
+        }
     }
 
     tabHeadHandleClick(e, index) {

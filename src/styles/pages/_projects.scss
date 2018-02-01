@@ -30,6 +30,7 @@
           cursor: pointer;
           &:hover {
             h3 {
+              background: rgba(255,255,255, 0.4);
               opacity: .7;
               &:after {
                 opacity: 1;
@@ -41,6 +42,7 @@
             line-height: 40px;
             font-weight: normal;
             position: relative;
+            padding: 2px 15px;
             &:after {
               content: '';
               width: 8px;
@@ -51,7 +53,7 @@
               display: inline-block;
               position: absolute;
               top: 50%;
-              right: 0;
+              right: 15px;
               opacity: 0;
             }
           }

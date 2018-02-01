@@ -362,18 +362,18 @@
       "lec_en": ["KOBAYASHI Masahiro","MAEDA Shinjiro","MATSUI Shigeru","IMURA Yasuko"],
       "proj_img": "proj_lib.jpg",
       "works": [""]
-    },
-    {
-      "name_ja": "産業文化研究センター",
-      "name_en": "Research Center for Industrial Culture",
-      "prof": "産業文化研究センター［RCIC］は、IAMASの産官学連携、文化活動、広報活動を担うIAMASの附置機関である。",
-      "title_ja": "RCIC活動報告",
-      "title_en": "RCIC's Annual Report",
-      "exh_ov": "本展示では、今年度の実施した主な連携活動や、現在運営しているしているOBOGインタビューサイト等、実際の制作物ととも紹介する。",
-      "lec_ja": ["金山 智子","小林茂","瀬川 晃"],
-      "lec_en": ["KANAYAMA Tomoko","KOBAYASHI Shigeru","SEGAWA Akira"],
-      "proj_img": "proj_rcic.png",
-      "works": [""]
     }
+//    {
+//      "name_ja": "産業文化研究センター",
+//      "name_en": "Research Center for Industrial Culture",
+//      "prof": "産業文化研究センター［RCIC］は、IAMASの産官学連携、文化活動、広報活動を担うIAMASの附置機関である。",
+//      "title_ja": "RCIC活動報告",
+//      "title_en": "RCIC's Annual Report",
+//      "exh_ov": "本展示では、今年度の実施した主な連携活動や、現在運営しているしているOBOGインタビューサイト等、実際の制作物ととも紹介する。",
+//      "lec_ja": ["金山 智子","小林茂","瀬川 晃"],
+//      "lec_en": ["KANAYAMA Tomoko","KOBAYASHI Shigeru","SEGAWA Akira"],
+//      "proj_img": "proj_rcic.png",
+//      "works": [""]
+//    }
   ]
 }
