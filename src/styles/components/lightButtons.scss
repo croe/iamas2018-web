@@ -14,32 +14,30 @@
       top: 50%;
       left: 50%;
       cursor: pointer;
-      transition: all 0.2s linear;
+      transition: all 1000ms ease-out;
     }
     &:hover {
       &:after {
-        width: 24px;
-        height: 24px;
-        top: calc(50% - 2px);
-        left: calc(50% - 2px);
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 5px);
+        left: calc(50% - 5px);
         background-color: lighten($color-key, 15%);
-        // transition: all 0.2s linear;
       }
     }
     &:active {
       &:after {
-        width: 40px;
-        height: 40px;
-        top: calc(50% - 10px);
-        left: calc(50% - 10px);
+        width: 60px;
+        height: 60px;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
         background-color: lighten($color-key, 30%);
-        //
       }
     }
     &.btn__0 {
       // 左下
       left: 100px;
-      bottom: 100px;
+      bottom: 50px;
     }
     &.btn__1 {
       // 左上
@@ -55,7 +53,7 @@
     &.btn__3 {
       // 右下
       right: 50px;
-      bottom: 100px;
+      bottom: 50px;
     }
   }
 }
