@@ -125,7 +125,7 @@ class Event extends Component {
 
         let tabContent = () => {
             let data = this.state.data[this.state.itemIndex];
-            let imgsrc = "/images/" + data.event_img;
+            let imgsrc = "/exhibit18/images/" + data.event_img;
             if (data.guest) {
                 if (data.guest_prof){
                     return (

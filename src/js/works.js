@@ -64,7 +64,7 @@ class Works extends Component {
 
         // もっとシンプルにしたい
         let works_list1 = workData.works.map((item, index) => {
-            let imgsrc = "/images/" + item.image_1x1;
+            let imgsrc = "/exhibit18/images/" + item.image_1x1;
             if (index !== 12) {
                 return (
                     <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
@@ -74,7 +74,7 @@ class Works extends Component {
             }
         });
         let works_list2 = workData.works.map((item, index) => {
-            let imgsrc = "/images/" + item.image_1x1;
+            let imgsrc = "/exhibit18/images/" + item.image_1x1;
             if (index === 12) {
                 return (
                     <li onClick={e => this.showWorksHandleClick(e,index)} key={index} data-author={item.name_en} data-mfp-src="#works__content">
@@ -86,7 +86,7 @@ class Works extends Component {
 
         let modal__content = () => {
             let wd = workData.works[this.state.selected];
-            let imgsrc = "/images/" + wd.image_16x9;
+            let imgsrc = "/exhibit18/images/" + wd.image_16x9;
             return (
                 <div className="wrapper">
                     <button className="btn_close" />

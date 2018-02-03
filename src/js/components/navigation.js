@@ -42,15 +42,15 @@ class Navigation extends Component {
                  className="layout__navigation">
                 <nav className="layout__navigation--wrapper">
                     <ul className="menu">
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/" data-ja="トップ">Top</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#info" data-ja="インフォメーション">Information</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#theme" data-ja="テーマ">Theme</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/event" data-ja="イベント">Events</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/works" data-ja="修士作品">Works</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/projects" data-ja="プロジェクト">Projects</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#others" data-ja="関連コーナー">Others</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#access" data-ja="アクセス">Access</Link></li>
-                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/#contact" data-ja="お問い合わせ">Contact</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/" data-ja="トップ">Top</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/#info" data-ja="インフォメーション">Information</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/#theme" data-ja="テーマ">Theme</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/works" data-ja="修士作品">Works</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/event" data-ja="イベント">Events</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/projects" data-ja="プロジェクト">Projects</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/#others" data-ja="関連コーナー">Others</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/#access" data-ja="アクセス">Access</Link></li>
+                        <li onClick={e => this.pageTransitionHandleClick()}><Link to="/exhibit18/#contact" data-ja="お問い合わせ">Contact</Link></li>
                     </ul>
                     <ul className="sns">
                         <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"/></li>
@@ -65,7 +65,3 @@ class Navigation extends Component {
 }
 
 export default Navigation
-
-/*
- TODO: インデックス以外からインデックスに戻ったときにアンカーリンクの場所に移動しない。（Linkを使わなければ可、その代わりリロードが発生する）
- */

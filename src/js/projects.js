@@ -29,6 +29,12 @@ class Projects extends Component {
         $window.on('resize', () => {
             $('.bg_live').css({'height': $window.innerHeight()});
         })
+        if ($('.layout__container--wrapper').height() < $(window).innerHeight()) {
+            $('.layout__container--wrapper').css({'minHeight': $window.innerHeight()});
+            $window.on('resize', () => {
+                $('.layout__container--wrapper').css({'minHeight': $window.innerHeight()});
+            })
+        }
     }
 
     showProjectsHandleClick(e, item, index){
@@ -68,7 +74,7 @@ class Projects extends Component {
 
         let project_content = () => {
             let data = projectData.projects[this.state.itemIndex];
-            let imgsrc = "/images/" + data.proj_img;
+            let imgsrc = "/exhibit18/images/" + data.proj_img;
             let lectures = data.lec_ja.map((_item, _index) => {
                 return (
                     <li key={_index}>{_item} / {data.lec_en[_index]}</li>
@@ -93,7 +99,7 @@ class Projects extends Component {
 
         let project_works = () => {
             let works = projectData.projects[this.state.itemIndex].works.map((_item, _index) => {
-                let imgsrc = "/images/" + _item.thumbnail;
+                let imgsrc = "/exhibit18/images/" + _item.thumbnail;
                 let authorInfo;
                 if (_item.author_ja !== undefined){
                     authorInfo = _item.author_ja.map((__item, __index) => {

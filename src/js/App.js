@@ -16,7 +16,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        youtubeLink: ""
+        youtubeLink: ["mkLW5gZpjr4"]
     }
   }
 
@@ -33,35 +33,35 @@ class App extends Component {
       });
   }
 
-  componentDidMount(){
-    let it = this;
+    componentDidMount() {
+        let it = this;
 
-    if((16/9) > $(window).innerWidth() / $(window).innerHeight()) {
-        $('.bg_live span').css({
-            width: $(window).innerWidth() * (16/9),
-            height: '100%'
-        });
-    } else {
-        $('.bg_live span').css({
-            width: '100%',
-            height: $(window).innerHeight() * (16/9)
-        });
-    }
-
-    $(window).on('resize',() => {
-        if((16/9) > $(window).innerWidth() / $(window).innerHeight()) {
+        if ((16 / 9) > $(window).innerWidth() / $(window).innerHeight()) {
             $('.bg_live span').css({
-                width: $(window).innerWidth() * (16/9),
+                width: $(window).innerWidth() * (16 / 9),
                 height: '100%'
             });
         } else {
             $('.bg_live span').css({
                 width: '100%',
-                height: $(window).innerHeight() * (16/9)
+                height: $(window).innerHeight() * (16 / 9)
             });
         }
-    })
-  }
+
+        $(window).on('resize', () => {
+            if ((16 / 9) > $(window).innerWidth() / $(window).innerHeight()) {
+                $('.bg_live span').css({
+                    width: $(window).innerWidth() * (16 / 9),
+                    height: '100%'
+                });
+            } else {
+                $('.bg_live span').css({
+                    width: '100%',
+                    height: $(window).innerHeight() * (16 / 9)
+                });
+            }
+        })
+    }
 
   render() {
     const opts = {
@@ -98,18 +98,16 @@ class App extends Component {
 }
 
 render((
-    <Router history={browserHistory}>
-      <Route path="/" components={App}>
-        <IndexRoute components={Index}/>
-        <Route path="/event" component={Event}/>
-        <Route path="/projects" component={Projects}/>
-        <Route path="/works" component={Works}/>
-      </Route>
-    </Router>
-  ), document.getElementById('root')
+        <Router history={browserHistory}>
+            <Route path="/exhibit18/" components={App}>
+                <IndexRoute components={Index}/>
+                <Route path="/exhibit18/event" component={Event}/>
+                <Route path="/exhibit18/projects" component={Projects}/>
+                <Route path="/exhibit18/works" component={Works}/>
+            </Route>
+        </Router>
+    ), document.getElementById('root')
 );
 
 // TODO: トップへ戻るボタン
-// TODO: アンカーが機能しない問題
-// TODO: 横スライド系マージン・パディング調整
 // TODO: ライトのリップル効果

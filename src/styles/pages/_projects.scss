@@ -235,6 +235,28 @@
           display: block;
           .main {
             width: 100%;
+            padding: 0 15px;
+            img {
+              padding: 0 0 20px;
+            }
+            h3 {
+              padding: 10px 0 0;
+            }
+            p {
+              padding: 0;
+            }
+            h4 {
+              padding: 0;
+            }
+            ul {
+              padding: 0;
+            }
+            .btn_prev {
+              left: -28px;
+            }
+            .btn_next {
+              right: -28px;
+            }
           }
           .works {
             padding: 0 15px;

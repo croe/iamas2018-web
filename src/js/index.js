@@ -45,10 +45,10 @@ class Index extends Component {
             <div className="layout__container page__index">
                 <main className="layout__container--wrapper">
                     <article className="mainvisual pc">
-                        <img src="/images/title.svg" alt=""/>
+                        <img src="/exhibit18/images/title.svg" alt=""/>
                     </article>
                     <article className="mainvisual sp">
-                        <img src="/images/title_sp.svg" alt=""/>
+                        <img src="/exhibit18/images/title_sp.svg" alt=""/>
                     </article>
                     <article id="info">
                         <h2 data-subtitle="開催概要">Information</h2>
@@ -98,7 +98,7 @@ class Index extends Component {
                                 <li>塚原 真梨佳 (研究生)</li>
                             </ul>
                             <div className="layout__container--content__more">
-                                <Link to="/works">More</Link>
+                                <Link to="/exhibit18/works">More</Link>
                             </div>
                         </div>
                     </article>
@@ -142,7 +142,7 @@ class Index extends Component {
                               </li>
                             </ul>
                             <div className="layout__container--content__more">
-                                <Link to="/event">More</Link>
+                                <Link to="/exhibit18/event">More</Link>
                             </div>
                         </div>
                     </article>
@@ -154,7 +154,7 @@ class Index extends Component {
                                 2018」では修士研究発表に加えて、これらプロジェクト研究の成果を展示します。
                             </p>
                             <div className="layout__container--content__more">
-                                <Link to="/projects">More</Link>
+                                <Link to="/exhibit18/projects">More</Link>
                             </div>
                         </div>
                     </article>
@@ -163,12 +163,12 @@ class Index extends Component {
                         <div className="layout__container--content">
                           <h3 className="others__header">進学相談</h3>
                           <div className="others__content">
-                            <img src="/images/other_1.jpg" />
+                            <img src="/exhibit18/images/other_1.jpg" />
                             <p>ご自身の研究や入試、IAMASでの研究や学生生活について直接希望する教員に相談・質問することができます。</p>
                           </div>
                           <h3 className="others__header">カフェ 南原食堂</h3>
                           <div className="others__content">
-                            <img src="/images/other_2.png" />
+                            <img src="/exhibit18/images/other_2.png" />
                             <div className="others__content">
                               <p>岐阜県大垣市を拠点とする南原兄弟によるコミュニティ食堂「<a href="https://www.facebook.com/namshoku/" target="_blank">南原食堂</a>」が、本卒展にあわせて特設カフェをオープンします。是非お立ち寄りください。 ※ 2月24日(土)、25日(日)のみ営業</p>
                             </div>
@@ -178,7 +178,7 @@ class Index extends Component {
                     <article id="access" className="access">
                         <h2 data-subtitle="アクセス">Access</h2>
                         <div className="layout__container--content">
-                            <img src="/images/map.svg" alt=""/>
+                            <img src="/exhibit18/images/map.svg" alt=""/>
                             <p>〒503-0006 岐阜県大垣市加賀野4丁目1-7</p>
                             <p>
                                 &lt;大垣駅より&gt;<br/>
@@ -196,13 +196,13 @@ class Index extends Component {
                               MAIL: <a href="mailto:event@ml.iamas.ac.jp">event@ml.iamas.ac.jp</a></p>
                               <ul className="contact__sns">
                                   <li><a href="https://www.facebook.com/IAMAS.GraduationExhibition/" target="_blank"><img
-                                      src="/images/icon_facebook.svg"/></a></li>
+                                      src="/exhibit18/images/icon_facebook.svg"/></a></li>
                                   <li><a href="https://twitter.com/iamas_exhibit" target="_blank"><img
-                                      src="/images/icon_twitter.svg"/></a></li>
+                                      src="/exhibit18/images/icon_twitter.svg"/></a></li>
                                   <li><a href="https://www.instagram.com/iamas2018/" target="_blank"><img
-                                      src="/images/icon_instagram.svg"/></a></li>
+                                      src="/exhibit18/images/icon_instagram.svg"/></a></li>
                               </ul>
-                            <a href="http://www.iamas.ac.jp"><img src="/images/footer_logo.png" /></a>
+                            <a href="http://www.iamas.ac.jp"><img src="/exhibit18/images/footer_logo.png" /></a>
                         </div>
                     </article>
                 </main>

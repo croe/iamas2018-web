@@ -45,6 +45,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
+      &.fuckIE11 {
+        background: url("/exhibit18/images/bg.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
       iframe {
         width: 100%;
         height: 100%;
@@ -164,7 +169,7 @@
     box-sizing: border-box;
     overflow: scroll;
     .bg_live {
-      background: url(/images/bg.jpg) no-repeat;
+      background: url(/exhibit18/images/bg.jpg) no-repeat;
       background-size: cover;
       background-position: top center;
       width: 100%;
