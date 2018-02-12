@@ -150,6 +150,12 @@
         background-position: center left;
       }
     }
+    .share {
+      display: flex;
+      flex-direction: row;
+      width: 75px;
+      justify-content: space-between;
+    }
   }
 }
 

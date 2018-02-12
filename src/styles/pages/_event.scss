@@ -122,6 +122,13 @@
               }
             }
           }
+          .share {
+            margin: 20px 0 0;
+            display: flex;
+            flex-direction: row;
+            width: 75px;
+            justify-content: space-between;
+          }
           .btn_prev, .btn_next {
             position: absolute;
             display: block;
