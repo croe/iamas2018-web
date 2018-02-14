@@ -121,6 +121,7 @@ class Works extends Component {
       let wd = workData.works[this.state.selected];
       let imgsrc = "/exhibit18/images/" + wd.image_16x9;
       let shareUrl = "http://www.iamas.ac.jp/exhibit18/works/?q=" + this.state.selected;
+      let shareTitle = "「" + wd.title_ja + "」 / " + wd.name_ja;
       return (
         <div className="wrapper">
           <button className="btn_close"/>
@@ -138,21 +139,24 @@ class Works extends Component {
           </div>
           <br />
           <div className="share">
-            <FacebookShareButton
-              url={shareUrl}
-              quote={wd.title_ja}>
-              <FacebookIcon
-                size={32}
-                round />
-            </FacebookShareButton>
-            <TwitterShareButton
-              url={shareUrl}
-              title={wd.title_ja}
-              hashtags={["IAMAS2018"]}>
-              <TwitterIcon
-                size={32}
-                round />
-            </TwitterShareButton>
+            <h4>Share on</h4>
+            <div className="buttons">
+              <FacebookShareButton
+                url={shareUrl}
+                quote={shareTitle}>
+                <FacebookIcon
+                  size={32}
+                  round />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={shareUrl}
+                title={shareTitle}
+                hashtags={["IAMAS2018"]}>
+                <TwitterIcon
+                  size={32}
+                  round />
+              </TwitterShareButton>
+            </div>
           </div>
         </div>
       )

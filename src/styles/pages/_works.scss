@@ -151,10 +151,22 @@
       }
     }
     .share {
-      display: flex;
-      flex-direction: row;
-      width: 75px;
-      justify-content: space-between;
+      display: block;
+      width: 100%;
+      border-top: 1px solid $color-border-gray;
+      padding: 10px 0 0;
+      h4 {
+        font-size: 18px;
+        line-height: 1.4;
+        color: $color-key;
+      }
+      .buttons {
+        padding: 10px 0 0;
+        display: flex;
+        flex-direction: row;
+        width: 75px;
+        justify-content: space-between;
+      }
     }
   }
 }
