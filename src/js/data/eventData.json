@@ -112,10 +112,10 @@
         "event_img": "event_4.jpg"
       },
       {
-        "title": "体験拡張環境プロジェクト特別講義「リアルタイムCG表現の今」",
+        "title": "体験拡張環境プロジェクト特別講義「Unity \"Shader Graph\" を用いたグラフィクス・プログラミング」",
         "date": "15:00-16:30",
         "place": "ソピアホール前イベントスペース",
-        "content": "Unityのグラフィクス・プログラミングにおける世界屈指のコントリビュータであり、VJとして高度な映像演出を手がける高橋啓治郎（Keijiro Takahashi）氏を迎え、特別ワークショップを開催。Unityにおけるハイエンドなグラフィクス・プログラミングについてレクチャーをする。中級者向け。<br>時間: 15:00- 講義（参加自由）、15:30- ハンズオン（要申し込み）<br><div style='width: 100%;text-align: center;'><a href='https://goo.gl/forms/8jdyXzkZmW5v5WtJ3' target='_blank' style='text-align: center;text-decoration: none;background-color: #004160;color: #fff;font-size: 1.5em;display: block;margin: 27px auto 0;max-width: 400px;padding: 8px;'>お申込み</a></div>",
+        "content": "Unityのグラフィクス・プログラミングにおける世界屈指のコントリビュータであり、VJとして高度な映像演出を手がける高橋啓治郎（Keijiro Takahashi）氏を迎え、特別ワークショップを開催。Unity 2018.1（３月正式リリース予定）の新機能である\"Shader Graph\"を用いてハンズオンを行う。シェーダープログラミングの経験の無い方には、それに初めて触れるきっかけとしていただき、シェーダープログラミングの経験の有る方には、今までとは異なる新しいシェーダー構築の方法を体験していただく。<br>時間: 15:00- 講義（参加自由）、15:30- ハンズオン（要申し込み）<br>※ ハンズオンにご参加いただく場合は、<a href='https://unity3d.com/unity/beta'>ベータ版Unity</a>を事前にダウンロードしてください。<br><div style='width: 100%;text-align: center;'><a href='https://goo.gl/forms/8jdyXzkZmW5v5WtJ3' target='_blank' style='text-align: center;text-decoration: none;background-color: #004160;color: #fff;font-size: 1.5em;display: block;margin: 27px auto 0;max-width: 400px;padding: 8px;'>お申込み</a></div>",
         "level": 1,
         "label": "ワークショップ",
         "guest": "高橋啓治郎",
@@ -163,7 +163,7 @@
     "date4": [
       {
         "title": "クリティカル・サイクリング早朝耐寒ライド",
-        "date": "8:00-11:00",
+        "date": "8:00-10:00",
         "place": "ソピアホール前イベントスペース",
         "content": "IAMAS周辺を約1時間20km程度ライドし、この地域特有のモーニング文化に触れるべく喫茶店での朝食会を行う。モーニング代金500円程度をお持ちください。悪天時はライドを中止し、朝食会のみ実施する。詳細は <a href='http://criticalcycling.com/2018/02/critical-cycling-mobile-arts-exhibition-2018-winter/' target='_blank'>クリティカル・サイクリングWEBサイト</a> をご覧ください。",
         "level": 0,
